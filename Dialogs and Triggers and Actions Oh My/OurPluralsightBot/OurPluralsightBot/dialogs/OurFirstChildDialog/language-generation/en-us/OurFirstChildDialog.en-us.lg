@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# SendActivity_3Twsbi()
+[Activity
+    Text = ${SendActivity_3Twsbi_text()}
+]
+
+# SendActivity_3Twsbi_text()
+- Hi from our child dialog!

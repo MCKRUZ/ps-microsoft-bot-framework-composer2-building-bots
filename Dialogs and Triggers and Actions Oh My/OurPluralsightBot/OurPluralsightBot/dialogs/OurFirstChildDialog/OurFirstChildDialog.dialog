@@ -1,0 +1,32 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "qcvubb",
+    "name": "OurFirstChildDialog",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "WCIXX4"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "3Twsbi"
+          },
+          "activity": "${SendActivity_3Twsbi()}"
+        }
+      ]
+    }
+  ],
+  "generator": "OurFirstChildDialog.lg",
+  "recognizer": "OurFirstChildDialog.lu.qna",
+  "id": "OurFirstChildDialog"
+}
