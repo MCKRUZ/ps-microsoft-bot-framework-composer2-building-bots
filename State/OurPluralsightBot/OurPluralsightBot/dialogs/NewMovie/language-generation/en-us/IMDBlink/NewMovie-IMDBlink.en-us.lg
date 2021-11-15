@@ -1,0 +1,133 @@
+
+
+>> Prompts
+
+# IMDBlink_MissingPrompt()
+> Activity Prompt when 'IMDBlink' is missing
+[Activity
+    Text = ${IMDBlink_MissingPrompt_text()}
+]
+
+# IMDBlink_MissingPrompt_text()
+> Prompt when 'IMDBlink' is missing
+- Imdb link?
+
+# IMDBlink_ChangePrompt()
+> Activity Prompt when 'IMDBlink' property has a value, but is being changed
+[Activity
+    Text = ${IMDBlink_ChangePrompt_text()}
+]
+
+# IMDBlink_ChangePrompt_text()
+> Prompt when 'IMDBlink' property has a value, but is being changed
+- Change "${IMDBlink_Value($IMDBlink)}" in imdb link to?
+
+
+>> Confirmation
+
+# IMDBlink_ExpectedSetConfirmation(newVal)
+> Activity Confirmation when adding unexpected value to empty 'IMDBlink' property
+[Activity
+    Text = ${IMDBlink_ExpectedSetConfirmation_text(newVal)}
+]
+
+# IMDBlink_ExpectedSetConfirmation_text(newVal)
+> Confirmation when adding unexpected value to empty 'IMDBlink' property
+-  
+
+# IMDBlink_ExpectedUpdateConfirmation(newVal)
+> Activity Confirmation when replacing expected value in 'IMDBlink' property
+[Activity
+    Text = ${IMDBlink_ExpectedUpdateConfirmation_text(newVal)}
+]
+
+# IMDBlink_ExpectedUpdateConfirmation_text(newVal)
+> Confirmation when replacing expected value in 'IMDBlink' property
+- Changed imdb link from ${IMDBlink_Value($IMDBlink)} to ${IMDBlink_Value(newVal)}
+
+# IMDBlink_UnexpectedSetConfirmation(newVal)
+> Activity Confirmation when adding unexpected value to empty 'IMDBlink' property
+[Activity
+    Text = ${IMDBlink_UnexpectedSetConfirmation_text(newVal)}
+]
+
+# IMDBlink_UnexpectedSetConfirmation_text(newVal)
+> Confirmation when adding unexpected value to empty 'IMDBlink' property
+- Set imdb link to ${IMDBlink_Value(newVal)}
+
+# IMDBlink_UnexpectedUpdateConfirmation(newVal)
+> Activity Confirmation when replacing unexpected value in 'IMDBlink' property
+[Activity
+    Text = ${IMDBlink_UnexpectedUpdateConfirmation_text(newVal)}
+]
+
+# IMDBlink_UnexpectedUpdateConfirmation_text(newVal)
+> Confirmation when replacing unexpected value in 'IMDBlink' property
+- Changed imdb link from ${IMDBlink_Value($IMDBlink)} to ${IMDBlink_Value(newVal)}
+
+# IMDBlink_RemoveConfirmation(newVal)
+> Activity Confirmation activity when value is removed from 'IMDBlink' property
+[Activity
+    Text = ${IMDBlink_RemoveConfirmation_text(newVal)}
+]
+
+# IMDBlink_RemoveConfirmation_text(newVal)
+> Confirmation activity when value is removed from 'IMDBlink' property
+- Removed ${IMDBlink_Value(newVal)} from imdb link
+
+# IMDBlink_ClearConfirmation()
+> Activity Confirmation when 'IMDBlink' property is cleared
+[Activity
+    Text = ${IMDBlink_ClearConfirmation_text()}
+]
+
+# IMDBlink_ClearConfirmation_text()
+> Confirmation when 'IMDBlink' property is cleared
+- Cleared imdb link'
+
+>> Help
+
+# IMDBlink_RepromptHelp()
+> Activity Help for 'IMDBlink' property reprompt
+[Activity
+    Text = ${IMDBlink_RepromptHelp_text()}
+]
+
+# IMDBlink_RepromptHelp_text()
+> Help for 'IMDBlink' property reprompt
+- imdb link is a URL property
+
+# IMDBlink_Help()
+> Activity Help for 'IMDBlink' property
+[Activity
+    Text = ${IMDBlink_Help_text()}
+]
+
+# IMDBlink_Help_text()
+> Help for 'IMDBlink' property
+- imdb link is a URL property
+
+>> Show
+# IMDBlink_Show()
+> Activity Show value of 'IMDBlink' property
+[Activity
+    Text = ${IMDBlink_Show_text()}
+]
+
+# IMDBlink_Show_text()
+> Show value of 'IMDBlink' property
+- imdb link: ${IMDBlink_Value($IMDBlink)}
+
+# IMDBlink_Name()
+> Name of the 'IMDBlink' property
+- imdb link
+
+# IMDBlink_Value(val)
+> Display value for 'IMDBlink'
+ - IF: ${val}
+ - '${val}'
+ - ELSE:
+ - no value
+
+
+> Generator: e645178150eaca5b8425e8af8ec88ae1

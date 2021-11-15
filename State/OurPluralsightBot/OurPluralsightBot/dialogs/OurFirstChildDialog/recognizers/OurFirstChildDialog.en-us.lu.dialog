@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.LuisRecognizer",
+  "id": "LUIS_OurFirstChildDialog",
+  "applicationId": "=settings.luis.OurFirstChildDialog_en_us_lu.appId",
+  "version": "=settings.luis.OurFirstChildDialog_en_us_lu.version",
+  "endpoint": "=settings.luis.endpoint",
+  "endpointKey": "=settings.luis.endpointKey"
+}

@@ -1,0 +1,46 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "g5apaa",
+    "name": "ProductSelectDialog",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "842ORC"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "VpCQXX"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": true,
+          "allowInterruptions": false,
+          "prompt": "${TextInput_Prompt_VpCQXX()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "property": "dialog.result.productNumber"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "E6tV4j"
+          },
+          "activity": "${SendActivity_E6tV4j()}"
+        }
+      ]
+    }
+  ],
+  "generator": "ProductSelectDialog.lg",
+  "recognizer": "ProductSelectDialog.lu.qna",
+  "id": "ProductSelectDialog"
+}

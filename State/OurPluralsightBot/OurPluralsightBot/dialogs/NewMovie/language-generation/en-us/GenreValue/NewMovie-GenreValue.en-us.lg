@@ -1,0 +1,40 @@
+
+[NewMovie-form-extensions.en-us.lg](../form/NewMovie-form-extensions.en-us.lg)
+
+# GenreValue_Value(entity) 
+> Display value for 'GenreValue'
+- ${choices(entity.value, 'GenreEnum_Value', 'and')}
+
+# GenreEnum_Value(value) 
+> Display value for 'GenreValue' enumeration value
+- SWITCH: ${value}
+  - CASE: ${'Action'} 
+    - action
+  - CASE: ${'Comedy'} 
+    - comedy
+  - CASE: ${'Drama'} 
+    - drama
+  - CASE: ${'Fantasy'} 
+    - fantasy
+  - CASE: ${'Horror'} 
+    - horror
+  - CASE: ${'Mystery'} 
+    - mystery
+  - CASE: ${'Romance'} 
+    - romance
+  - CASE: ${'Thriller'} 
+    - thriller
+  - DEFAULT: 
+    - no value
+
+# GenreValue_chooseEntity()
+> Activity Choose between 'GenreValue' values
+[Activity
+    Text = ${GenreValue_chooseEntity_text()}
+]
+
+# GenreValue_chooseEntity_text()
+> Choose between 'GenreValue' values
+- ${chooseEnumEntity()}
+
+> Generator: e6583c086856233067a597260ab8199b

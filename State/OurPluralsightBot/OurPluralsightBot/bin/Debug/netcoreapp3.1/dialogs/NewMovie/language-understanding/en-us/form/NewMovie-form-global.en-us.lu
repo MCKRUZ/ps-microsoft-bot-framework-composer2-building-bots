@@ -1,0 +1,150 @@
+
+> Global operations
+@ ml Skip() usesFeature SkipPhrases
+@ ml Cancel() usesFeature CancelPhrases
+
+> Add examples for operations across properties
+# NewMovie
+> Assign() examples across properties
+- {Assign()=add {IMDBlinkProperty={url=http://my.random.com/}} and {IMDBlinkProperty={url=https://something.gov/woof} link}}
+- {Assign()=add {MovieNameProperty={utterance=**utterance3**} name} and {GenreProperty={GenreValue=Horror}}}
+- {Assign()=add {IMDBlinkProperty={url=https://something.gov/woof} imdb} and {GenreProperty={GenreValue=crime thriller}}}
+- {Assign()=add {IMDBlinkProperty={url=https://something.gov/woof} link} and {MovieNameProperty={MovieNameValue=**MovieNameValue2**} movie name}}
+- {Assign()=add {GenreProperty={GenreValue=Romance} genre} and {MovieNameProperty={MovieNameValue=**MovieNameValue2**} movie name}}
+- {Assign()=add {IMDBlinkProperty={url=https://something.gov/woof} link} and {MovieNameProperty={MovieNameValue=**MovieNameValue3**} movie}}
+- {Assign()=with {GenreProperty={GenreValue=crime thriller} genre}, {MovieNameProperty={utterance=**utterance2**} movie} and {MovieNameProperty={MovieNameValue=**MovieNameValue2**} name}}
+- {Assign()=with {IMDBlinkProperty={url=https://something.gov/woof} link}, {GenreProperty={GenreValue=disaster thriller}} and {MovieNameProperty={MovieNameValue=**MovieNameValue2**} movie name}}
+- {Assign()=with {RatingProperty={number=1}}, {MovieNameProperty={MovieNameValue=**MovieNameValue2**} name} and {GenreProperty={GenreValue=Drama} genre}}
+- {Assign()=with {RatingProperty={number=215}}, {MovieNameProperty={MovieNameValue=**MovieNameValue2**} movie} and {RatingProperty={number=215}}}
+- {Assign()=with {MovieNameProperty={utterance=**utterance3**} movie name}, {RatingProperty={number=99}} and {MovieNameProperty={MovieNameValue=**MovieNameValue1**}}}
+- {Assign()=with {MovieNameProperty={MovieNameValue=**MovieNameValue3**} movie}, {GenreProperty={GenreValue=disaster thriller} genre} and {MovieNameProperty={MovieNameValue=**MovieNameValue1**}}}
+
+> Remove() examples across properties
+- {Remove()=delete {IMDBlinkProperty={url=https://something.gov/woof} link} and {IMDBlinkProperty={url=http://foo.com/bark} imdb}}
+- {Remove()=delete {MovieNameProperty={utterance=**utterance2**} name} and {GenreProperty={GenreValue=Horror}}}
+- {Remove()=delete {GenreProperty={GenreValue=Comedy} genre} and {IMDBlinkProperty={url=https://something.gov/woof} imdb}}
+- {Remove()=delete {MovieNameProperty={utterance=**utterance1**} movie} and {IMDBlinkProperty={url=http://foo.com/bark} link}}
+- {Remove()=delete {MovieNameProperty={MovieNameValue=**MovieNameValue2**} name} and {MovieNameProperty={MovieNameValue=**MovieNameValue3**}}}
+- {Remove()=delete {IMDBlinkProperty={url=https://something.gov/woof} link} and {MovieNameProperty={MovieNameValue=**MovieNameValue2**} movie name}}
+- {Remove()=without {GenreProperty={GenreValue=Mystery} genre}, {IMDBlinkProperty={url=https://something.gov/woof}} and {utterance=**utterance1**}}
+- {Remove()=without {RatingProperty={number=1}}, {IMDBlinkProperty={url=http://my.random.com/}} and {IMDBlinkProperty={url=http://foo.com/bark} imdb link}}
+- {Remove()=without {GenreProperty={GenreValue=crime thriller}}, {RatingProperty={number=215} rating} and {GenreProperty={GenreValue=Drama}}}
+- {Remove()=without {RatingProperty={number=1000} rating}, {utterance=**utterance3**} and {IMDBlinkProperty={url=https://something.gov/woof} imdb}}
+- {Remove()=without {MovieNameProperty={utterance=**utterance3**} name}, {MovieNameProperty={utterance=**utterance2**} movie} and {MovieNameProperty={utterance=**utterance1**} movie name}}
+- {Remove()=without {MovieNameProperty={MovieNameValue=**MovieNameValue2**} name}, {RatingProperty={number=215} rating} and {GenreProperty={GenreValue=Comedy} genre}}
+
+> Clear() examples across properties
+- {Clear()=clear {IMDBlinkProperty=link} and {MovieNameProperty=movie name}}
+- {Clear()=clear {IMDBlinkProperty=link} and {MovieNameProperty=name}}
+- {Clear()=clear {MovieNameProperty=movie name} and {IMDBlinkProperty=imdb link}}
+- {Clear()=clear {IMDBlinkProperty=imdb} and {MovieNameProperty=name}}
+- {Clear()=clear {MovieNameProperty=name} and {GenreProperty=genre}}
+- {Clear()=clear {RatingProperty=rating} and {GenreProperty=genre}}
+- {Clear()=reset {IMDBlinkProperty=imdb link}, {GenreProperty=genre} and {IMDBlinkProperty=link}}
+- {Clear()=reset {IMDBlinkProperty=imdb link}, {IMDBlinkProperty=imdb} and {RatingProperty=rating}}
+- {Clear()=reset {IMDBlinkProperty=imdb}, {GenreProperty=genre} and {IMDBlinkProperty=imdb link}}
+- {Clear()=reset {MovieNameProperty=name}, {IMDBlinkProperty=link} and {MovieNameProperty=name}}
+- {Clear()=reset {RatingProperty=rating}, {MovieNameProperty=movie} and {IMDBlinkProperty=imdb link}}
+- {Clear()=reset {GenreProperty=genre}, {RatingProperty=rating} and {MovieNameProperty=movie}}
+
+> Show() examples across properties
+- {Show()=show {GenreProperty=genre} and {MovieNameProperty=movie name}}
+- {Show()=show {MovieNameProperty=movie} and {GenreProperty=genre}}
+- {Show()=show {MovieNameProperty=movie} and {MovieNameProperty=movie}}
+- {Show()=show {MovieNameProperty=name} and {RatingProperty=rating}}
+- {Show()=show {IMDBlinkProperty=imdb link} and {RatingProperty=rating}}
+- {Show()=show {MovieNameProperty=movie name} and {MovieNameProperty=movie}}
+- {Show()=value of {MovieNameProperty=movie name}, {IMDBlinkProperty=imdb} and {IMDBlinkProperty=imdb}}
+- {Show()=value of {IMDBlinkProperty=imdb link}, {RatingProperty=rating} and {IMDBlinkProperty=link}}
+- {Show()=value of {MovieNameProperty=movie}, {GenreProperty=genre} and {GenreProperty=genre}}
+- {Show()=value of {MovieNameProperty=name}, {MovieNameProperty=name} and {IMDBlinkProperty=imdb}}
+- {Show()=value of {MovieNameProperty=movie name}, {MovieNameProperty=movie} and {MovieNameProperty=name}}
+- {Show()=value of {IMDBlinkProperty=imdb}, {IMDBlinkProperty=imdb link} and {IMDBlinkProperty=link}}
+- {Show()={IMDBlinkProperty=link} and {MovieNameProperty=movie name} values}
+- {Show()={GenreProperty=genre} and {MovieNameProperty=movie name} values}
+- {Show()={IMDBlinkProperty=imdb} and {IMDBlinkProperty=imdb} values}
+- {Show()={MovieNameProperty=name} and {RatingProperty=rating} values}
+- {Show()={IMDBlinkProperty=imdb} and {MovieNameProperty=name} values}
+- {Show()={IMDBlinkProperty=link} and {MovieNameProperty=name} values}
+
+> Help() examples across properties
+- {Help()=help for {IMDBlinkProperty=imdb} and {MovieNameProperty=movie}}
+- {Help()=help for {IMDBlinkProperty=imdb link} and {IMDBlinkProperty=link}}
+- {Help()=help for {MovieNameProperty=movie name} and {RatingProperty=rating}}
+- {Help()=help for {GenreProperty=genre} and {IMDBlinkProperty=link}}
+- {Help()=help for {MovieNameProperty=movie} and {MovieNameProperty=movie}}
+- {Help()=help for {MovieNameProperty=movie name} and {MovieNameProperty=movie name}}
+- {Help()=help on {MovieNameProperty=movie} and {MovieNameProperty=movie}}
+- {Help()=help on {IMDBlinkProperty=imdb} and {IMDBlinkProperty=imdb}}
+- {Help()=help on {MovieNameProperty=name} and {IMDBlinkProperty=imdb}}
+- {Help()=help on {GenreProperty=genre} and {IMDBlinkProperty=link}}
+- {Help()=help on {RatingProperty=rating} and {RatingProperty=rating}}
+- {Help()=help on {IMDBlinkProperty=imdb link} and {MovieNameProperty=name}}
+- {Help()={MovieNameProperty=name} and {IMDBlinkProperty=link} help}
+- {Help()={MovieNameProperty=movie} and {RatingProperty=rating} help}
+- {Help()={MovieNameProperty=name} and {MovieNameProperty=movie name} help}
+- {Help()={IMDBlinkProperty=imdb link} and {IMDBlinkProperty=link} help}
+- {Help()={IMDBlinkProperty=imdb link} and {MovieNameProperty=movie} help}
+- {Help()={RatingProperty=rating} and {IMDBlinkProperty=link} help}
+
+> Change() examples across properties
+- {Change()=change {IMDBlinkProperty=link} and {IMDBlinkProperty=imdb}}
+- {Change()=change {IMDBlinkProperty=imdb} and {MovieNameProperty=movie name}}
+- {Change()=change {MovieNameProperty=movie} and {IMDBlinkProperty=link}}
+- {Change()=change {MovieNameProperty=movie} and {MovieNameProperty=movie}}
+- {Change()=change {MovieNameProperty=movie} and {RatingProperty=rating}}
+- {Change()=change {MovieNameProperty=movie name} and {MovieNameProperty=name}}
+- {Change()=goto {MovieNameProperty=movie}, {IMDBlinkProperty=imdb} and {IMDBlinkProperty=imdb link}}
+- {Change()=goto {GenreProperty=genre}, {GenreProperty=genre} and {GenreProperty=genre}}
+- {Change()=goto {MovieNameProperty=movie name}, {RatingProperty=rating} and {GenreProperty=genre}}
+- {Change()=goto {MovieNameProperty=movie}, {IMDBlinkProperty=imdb} and {MovieNameProperty=movie name}}
+- {Change()=goto {MovieNameProperty=movie}, {IMDBlinkProperty=imdb link} and {IMDBlinkProperty=imdb}}
+- {Change()=goto {IMDBlinkProperty=link}, {MovieNameProperty=movie} and {IMDBlinkProperty=imdb link}}
+
+> Global help
+- {Help()=help}
+- {Help()=what do you know?}
+- {Help()=what can I say?}
+- {Help()=what do you want to know?}
+- {Help()=I don't understand}
+
+> Global skip
+- {Skip()=skip}
+- {Skip()=neither}
+- {Skip()=none of those}
+- {Skip()=I don't care}
+- {Skip()=nothing}
+
+> Global cancel
+- {Cancel()=cancel}
+- {Cancel()=forget it}
+- {Cancel()=quit}
+
+> Mixed operations
+- {Assign()=add {MovieNameProperty={MovieNameValue=**MovieNameValue3**} name}, {MovieNameProperty={MovieNameValue=**MovieNameValue2**} movie name}} and {Show()=display {RatingProperty=rating}}
+- {Assign()=add {MovieNameProperty={MovieNameValue=**MovieNameValue1**} movie name}, {GenreProperty={GenreValue=Thriller}}} and {Show()=display {MovieNameProperty=name}}
+- {Assign()=add {GenreProperty={GenreValue=Mystery}}, {MovieNameProperty={utterance=**utterance1**} movie}} and {Show()=display {IMDBlinkProperty=link}}
+- {Assign()=add {RatingProperty={number=32.4}}, {utterance=**utterance3**}} and {Show()=display {IMDBlinkProperty=imdb link}}
+- {Assign()=add {RatingProperty={number=99} rating}, {GenreProperty={GenreValue=Drama}}} and {Show()=display {IMDBlinkProperty=link}}
+- {Assign()=add {MovieNameProperty={MovieNameValue=**MovieNameValue3**} movie name}, {GenreProperty={GenreValue=Comedy} genre}} and {Show()=display {RatingProperty=rating}}
+- {Remove()=remove {MovieNameProperty={MovieNameValue=**MovieNameValue2**} name}, {MovieNameProperty={MovieNameValue=**MovieNameValue2**} name}} and {Show()=show {MovieNameProperty=name}}
+- {Remove()=remove {RatingProperty={number=215} rating}, {GenreProperty={GenreValue=Mystery}}} and {Show()=show {IMDBlinkProperty=link}}
+- {Remove()=remove {RatingProperty={number=1000}}, {IMDBlinkProperty={url=http://my.random.com/}}} and {Show()=show {IMDBlinkProperty=link}}
+- {Remove()=remove {MovieNameProperty={MovieNameValue=**MovieNameValue2**} movie name}, {MovieNameProperty={MovieNameValue=**MovieNameValue3**}}} and {Show()=show {IMDBlinkProperty=imdb}}
+- {Remove()=remove {MovieNameProperty={utterance=**utterance2**} movie name}, {MovieNameProperty={utterance=**utterance2**} movie name}} and {Show()=show {MovieNameProperty=movie}}
+- {Remove()=remove {MovieNameProperty={MovieNameValue=**MovieNameValue3**} movie name}, {GenreProperty={GenreValue=Action}}} and {Show()=show {MovieNameProperty=name}}
+- {Assign()=add {MovieNameProperty={utterance=**utterance2**} name}}, {Remove()=remove {MovieNameProperty={utterance=**utterance2**} movie}} and {Show()=show {MovieNameProperty=name}}
+- {Assign()=add {GenreProperty={GenreValue=Mystery}}}, {Remove()=remove {GenreProperty={GenreValue=Mystery} genre}} and {Show()=show {MovieNameProperty=name}}
+- {Assign()=add {MovieNameProperty={utterance=**utterance2**} movie name}}, {Remove()=remove {GenreProperty={GenreValue=Action}}} and {Show()=show {RatingProperty=rating}}
+- {Assign()=add {IMDBlinkProperty={url=https://something.gov/woof} imdb link}}, {Remove()=remove {MovieNameProperty={MovieNameValue=**MovieNameValue3**} movie name}} and {Show()=show {GenreProperty=genre}}
+- {Assign()=add {IMDBlinkProperty={url=http://foo.com/bark}}}, {Remove()=remove {MovieNameProperty={MovieNameValue=**MovieNameValue3**} name}} and {Show()=show {IMDBlinkProperty=imdb}}
+- {Assign()=add {RatingProperty={number=99} rating}}, {Remove()=remove {GenreProperty={GenreValue=Romance} genre}} and {Show()=show {IMDBlinkProperty=imdb}}
+- {Remove()=remove {GenreProperty={GenreValue=Horror}}}, {Assign()=add {GenreProperty={GenreValue=Action}}} and {Show()=show {MovieNameProperty=name}}
+- {Remove()=remove {MovieNameProperty={MovieNameValue=**MovieNameValue1**} movie}}, {Assign()=add {GenreProperty={GenreValue=Mystery} genre}} and {Show()=show {IMDBlinkProperty=link}}
+- {Remove()=remove {MovieNameProperty={utterance=**utterance1**} movie}}, {Assign()=add {GenreProperty={GenreValue=Thriller}}} and {Show()=show {IMDBlinkProperty=imdb link}}
+- {Remove()=remove {MovieNameProperty={MovieNameValue=**MovieNameValue2**} movie}}, {Assign()=add {MovieNameProperty={utterance=**utterance1**} movie}} and {Show()=show {RatingProperty=rating}}
+- {Remove()=remove {RatingProperty={number=32.4} rating}}, {Assign()=add {GenreProperty={GenreValue=Drama} genre}} and {Show()=show {GenreProperty=genre}}
+- {Remove()=remove {IMDBlinkProperty={url=http://foo.com/bark} link}}, {Assign()=add {MovieNameProperty={MovieNameValue=**MovieNameValue1**} movie}} and {Show()=show {MovieNameProperty=movie}}
+
+
+> Generator: e5202e01cb3913ecfe68fd70756ce80c

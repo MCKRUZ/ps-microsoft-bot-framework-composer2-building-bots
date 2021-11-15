@@ -1,0 +1,60 @@
+[import](common.lg)
+
+# SendActivity_Greeting()
+[Activity
+    Text = ${SendActivity_Greeting_text()}
+]
+
+# SendActivity_Greeting_text()
+- Welcome to your bot.
+
+# SendActivity_DidNotUnderstand()
+[Activity
+    Text = ${SendActivity_DidNotUnderstand_text()}
+]
+
+# SendActivity_DidNotUnderstand_text()
+- Sorry, I didn't get that.
+# SendActivity_jnIlG1()
+[Activity
+    Text = ${SendActivity_jnIlG1_text()}
+    Speak = ${SendActivity_jnIlG1_speak()}
+    Attachments = ${SendActivity_jnIlG1_attachment_cAnUCJ()} | ${SendActivity_jnIlG1_attachment_64oO2t()}
+    SuggestedActions = Yes I'm still typing stop bothering me!
+    AttachmentLayout = carousel
+]
+
+# SendActivity_jnIlG1_text()
+- What are you typing there?
+- Are you still typing?
+- Are you finished typing?
+# SendActivity_jnIlG1_speak()
+- What <break strength="medium"/>are you doing?
+# SendActivity_jnIlG1_attachment_cAnUCJ()
+	[HeroCard
+	  title = Typing!
+	  subtitle = Still Typing!
+	  text = Man you type a lot!
+	  images = https://media3.giphy.com/media/13GIgrGdslD9oQ/giphy.gif?cid=ecf05e47t0v1zokeahl3m4lu9v33e6yup3f4lxit8v9ter30&rid=giphy.gif&ct=g
+]
+# SendActivity_jnIlG1_attachment_64oO2t()
+	[ThumbnailCard
+	 title = Typing!
+	      subtitle = Still Typing!
+	      text = Man you type a lot!
+	      images = https://media3.giphy.com/media/13GIgrGdslD9oQ/giphy.gif?cid=ecf05e47t0v1zokeahl3m4lu9v33e6yup3f4lxit8v9ter30&rid=giphy.gif&ct=g
+]
+# SendActivity_1pob2J()
+[Activity
+    Text = ${SendActivity_1pob2J_text()}
+]
+
+# SendActivity_1pob2J_text()
+- This is what is in ${dialog.productSelectResult}
+# SendActivity_dTZAJY()
+[Activity
+    Text = ${SendActivity_dTZAJY_text()}
+]
+
+# SendActivity_dTZAJY_text()
+- This is what is in my form: ${dialog.formValues}

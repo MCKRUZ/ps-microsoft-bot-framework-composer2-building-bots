@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.MultiLanguageRecognizer",
+  "id": "LUIS_NewMovie",
+  "recognizers": {
+    "en-us": "NewMovie.en-us.lu",
+    "": "NewMovie.en-us.lu"
+  }
+}

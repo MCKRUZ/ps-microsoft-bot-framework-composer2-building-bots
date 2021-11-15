@@ -1,0 +1,145 @@
+
+
+>> Prompts
+
+# Rating_MissingPrompt()
+> Activity Prompt when 'Rating' is missing
+[Activity
+    Text = ${Rating_MissingPrompt_text()}
+]
+
+# Rating_MissingPrompt_text()
+> Prompt when 'Rating' is missing
+- Enter a number for rating between ${dialogClass.schema.properties.Rating.minimum} and ${dialogClass.schema.properties.Rating.maximum}
+
+# Rating_ChangePrompt()
+> Activity Prompt when 'Rating' property has a value, but is being changed
+[Activity
+    Text = ${Rating_ChangePrompt_text()}
+]
+
+# Rating_ChangePrompt_text()
+> Prompt when 'Rating' property has a value, but is being changed
+- Change "${Rating_Value($Rating)}" in rating to?
+
+
+>> Confirmation
+
+# Rating_ExpectedSetConfirmation(newVal)
+> Activity Confirmation when adding unexpected value to empty 'Rating' property
+[Activity
+    Text = ${Rating_ExpectedSetConfirmation_text(newVal)}
+]
+
+# Rating_ExpectedSetConfirmation_text(newVal)
+> Confirmation when adding unexpected value to empty 'Rating' property
+-  
+
+# Rating_ExpectedUpdateConfirmation(newVal)
+> Activity Confirmation when replacing expected value in 'Rating' property
+[Activity
+    Text = ${Rating_ExpectedUpdateConfirmation_text(newVal)}
+]
+
+# Rating_ExpectedUpdateConfirmation_text(newVal)
+> Confirmation when replacing expected value in 'Rating' property
+- Changed rating from ${Rating_Value($Rating)} to ${Rating_Value(newVal)}
+
+# Rating_UnexpectedSetConfirmation(newVal)
+> Activity Confirmation when adding unexpected value to empty 'Rating' property
+[Activity
+    Text = ${Rating_UnexpectedSetConfirmation_text(newVal)}
+]
+
+# Rating_UnexpectedSetConfirmation_text(newVal)
+> Confirmation when adding unexpected value to empty 'Rating' property
+- Set rating to ${Rating_Value(newVal)}
+
+# Rating_UnexpectedUpdateConfirmation(newVal)
+> Activity Confirmation when replacing unexpected value in 'Rating' property
+[Activity
+    Text = ${Rating_UnexpectedUpdateConfirmation_text(newVal)}
+]
+
+# Rating_UnexpectedUpdateConfirmation_text(newVal)
+> Confirmation when replacing unexpected value in 'Rating' property
+- Changed rating from ${Rating_Value($Rating)} to ${Rating_Value(newVal)}
+
+# Rating_RemoveConfirmation(newVal)
+> Activity Confirmation activity when value is removed from 'Rating' property
+[Activity
+    Text = ${Rating_RemoveConfirmation_text(newVal)}
+]
+
+# Rating_RemoveConfirmation_text(newVal)
+> Confirmation activity when value is removed from 'Rating' property
+- Removed ${Rating_Value(newVal)} from rating
+
+# Rating_ClearConfirmation()
+> Activity Confirmation when 'Rating' property is cleared
+[Activity
+    Text = ${Rating_ClearConfirmation_text()}
+]
+
+# Rating_ClearConfirmation_text()
+> Confirmation when 'Rating' property is cleared
+- Cleared rating
+
+
+
+# Rating_TooBig(val)
+> Activity Rating property is greater than maximum allowed value
+[Activity
+    Text = ${Rating_TooBig_text(val)}
+]
+
+# Rating_TooBig_text(val)
+> Rating property is greater than maximum allowed value
+- ${Rating_Value(val)} must be no more than ${dialogClass.schema.properties.Rating.maximum} for rating
+
+>> Help
+
+# Rating_RepromptHelp()
+> Activity Help for 'Rating' property reprompt
+[Activity
+    Text = ${Rating_RepromptHelp_text()}
+]
+
+# Rating_RepromptHelp_text()
+> Help for 'Rating' property reprompt
+- rating is a number between ${dialogClass.schema.properties.Rating.minimum} and ${dialogClass.schema.properties.Rating.maximum}
+
+# Rating_Help()
+> Activity Help for 'Rating' property
+[Activity
+    Text = ${Rating_Help_text()}
+]
+
+# Rating_Help_text()
+> Help for 'Rating' property
+- rating is a number between ${dialogClass.schema.properties.Rating.minimum} and ${dialogClass.schema.properties.Rating.maximum}
+
+>> Show
+# Rating_Show()
+> Activity Show value of 'Rating' property
+[Activity
+    Text = ${Rating_Show_text()}
+]
+
+# Rating_Show_text()
+> Show value of 'Rating' property
+- rating: ${Rating_Value($Rating)}
+
+# Rating_Name()
+> Name of the 'Rating' property
+- rating
+
+# Rating_Value(val)
+> Display value for 'Rating'
+ - IF: ${val}
+ - '${val}'
+ - ELSE:
+ - no value
+
+
+> Generator: fcb8c5a21942822367b66091b5430a5e

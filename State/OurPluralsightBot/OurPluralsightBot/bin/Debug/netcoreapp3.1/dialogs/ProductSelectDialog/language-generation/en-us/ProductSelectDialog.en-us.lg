@@ -1,0 +1,16 @@
+[import](common.lg)
+
+# TextInput_Prompt_VpCQXX()
+[Activity
+    Text = ${TextInput_Prompt_VpCQXX_text()}
+]
+
+# TextInput_Prompt_VpCQXX_text()
+- Please enter the product number to search on
+# SendActivity_E6tV4j()
+[Activity
+    Text = ${SendActivity_E6tV4j_text()}
+]
+
+# SendActivity_E6tV4j_text()
+- You chose ${dialog.result.productNumber}

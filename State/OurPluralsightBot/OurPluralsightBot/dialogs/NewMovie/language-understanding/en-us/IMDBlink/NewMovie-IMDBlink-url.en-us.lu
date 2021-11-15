@@ -1,0 +1,142 @@
+
+@ prebuilt url
+
+
+> Define phrase list for 'IMDBlink property.
+@ phraselist IMDBlinkPhrases(interchangeable) disabledForAllModels =
+        - imdb
+        - link
+        - imdb link
+
+> Define property entity and optional value for 'IMDBlink' property.
+@ ml IMDBlinkProperty usesFeature IMDBlinkPhrases
+    - @ url url
+
+> Define operations on 'IMDBlink' property.
+@ ml Assign() usesFeature AssignPhrases
+    -@ ml IMDBlinkProperty usesFeature IMDBlinkProperty
+        - @ url url
+
+@ ml Remove() usesFeature RemovePhrases
+    -@ ml IMDBlinkProperty usesFeature IMDBlinkProperty
+        - @ url url
+
+@ ml Clear() usesFeature ClearPhrases
+    -@ ml IMDBlinkProperty usesFeature IMDBlinkProperty
+        - @ url url
+
+@ ml Change() usesFeature ChangePhrases
+    -@ ml IMDBlinkProperty usesFeature IMDBlinkProperty
+        - @ url url
+
+@ ml Show() usesFeature ShowPhrases
+    -@ ml IMDBlinkProperty usesFeature IMDBlinkProperty
+        - @ url url
+
+@ ml Help() usesFeature HelpPhrases
+    -@ ml IMDBlinkProperty usesFeature IMDBlinkProperty
+        - @ url url
+
+
+> Assign examples for operations on the 'IMDBlink' property to the intent 'NewMovie'.
+# NewMovie
+>> entity: Standalone IMDBlinkProperty with url
+- {IMDBlinkProperty={url=http://foo.com/bark}}
+- {IMDBlinkProperty={url=https://something.gov/woof}}
+- {IMDBlinkProperty={url=http://my.random.com/}}
+- {IMDBlinkProperty={url=http://foo.com/bark} imdb}
+- {IMDBlinkProperty={url=http://foo.com/bark} imdb link}
+- {IMDBlinkProperty={url=http://foo.com/bark} link}
+- {IMDBlinkProperty={url=https://something.gov/woof} imdb link}
+- {IMDBlinkProperty={url=https://something.gov/woof} link}
+- {IMDBlinkProperty={url=https://something.gov/woof} imdb}
+- {IMDBlinkProperty={url=http://my.random.com/} imdb}
+- {IMDBlinkProperty={url=http://my.random.com/} link}
+- {IMDBlinkProperty={url=http://my.random.com/} imdb link}
+
+>> property: Standalone IMDBlinkProperty name
+- {IMDBlinkProperty=imdb link}
+- {IMDBlinkProperty=link}
+- {IMDBlinkProperty=imdb}
+
+> Assign() examples for IMDBlinkProperty and url
+- {Assign()=add {IMDBlinkProperty={url=http://my.random.com/} link}}
+- {Assign()=add {IMDBlinkProperty={url=http://foo.com/bark} link}}
+- {Assign()=add {IMDBlinkProperty={url=http://my.random.com/} imdb link}}
+- {Assign()=add {IMDBlinkProperty={url=http://my.random.com/} imdb}}
+- {Assign()=add {IMDBlinkProperty={url=http://foo.com/bark} imdb}}
+- {Assign()=with {IMDBlinkProperty={url=http://foo.com/bark}}}
+- {Assign()=with {IMDBlinkProperty={url=https://something.gov/woof}}}
+- {Assign()=with {IMDBlinkProperty={url=http://my.random.com/}}}
+- {Assign()={IMDBlinkProperty=imdb link is {url=http://my.random.com/}}}
+- {Assign()={IMDBlinkProperty=imdb is {url=http://foo.com/bark}}}
+- {Assign()={IMDBlinkProperty=imdb link is {url=http://foo.com/bark}}}
+- {Assign()={IMDBlinkProperty=imdb is {url=https://something.gov/woof}}}
+- {Assign()={IMDBlinkProperty=imdb link is {url=https://something.gov/woof}}}
+- {Assign()={IMDBlinkProperty=link of {url=https://something.gov/woof}}}
+- {Assign()={IMDBlinkProperty=link of {url=http://my.random.com/}}}
+- {Assign()={IMDBlinkProperty=imdb link of {url=http://my.random.com/}}}
+- {Assign()={IMDBlinkProperty=imdb of {url=https://something.gov/woof}}}
+- {Assign()={IMDBlinkProperty=imdb link of {url=https://something.gov/woof}}}
+- {Assign()={IMDBlinkProperty=link are {url=https://something.gov/woof}}}
+- {Assign()={IMDBlinkProperty=link are {url=http://my.random.com/}}}
+- {Assign()={IMDBlinkProperty=imdb are {url=http://foo.com/bark}}}
+- {Assign()={IMDBlinkProperty=imdb link are {url=http://foo.com/bark}}}
+- {Assign()={IMDBlinkProperty=imdb link are {url=https://something.gov/woof}}}
+
+> Remove() examples for IMDBlinkProperty and url
+- {Remove()=remove {IMDBlinkProperty={url=http://foo.com/bark}}
+- {Remove()=remove {IMDBlinkProperty={url=http://my.random.com/}}
+- {Remove()=with no {IMDBlinkProperty={url=http://foo.com/bark} imdb link}
+- {Remove()=with no {IMDBlinkProperty={url=http://foo.com/bark} link}
+- {Remove()=with no {IMDBlinkProperty={url=https://something.gov/woof} imdb}
+- {Remove()=with no {IMDBlinkProperty={url=http://foo.com/bark} imdb}
+- {Remove()=with no {IMDBlinkProperty={url=http://my.random.com/} imdb}
+
+> Clear() examples for IMDBlinkProperty
+- {Clear()=clear {IMDBlinkProperty=imdb link}}
+- {Clear()=clear {IMDBlinkProperty=imdb}}
+- {Clear()=clear {IMDBlinkProperty=link}}
+- {Clear()=reset {IMDBlinkProperty=imdb}}
+- {Clear()=reset {IMDBlinkProperty=imdb link}}
+- {Clear()=reset {IMDBlinkProperty=link}}
+
+> Show() examples for IMDBlinkProperty
+- {Show()=show {IMDBlinkProperty=imdb}}
+- {Show()=show {IMDBlinkProperty=imdb link}}
+- {Show()=show {IMDBlinkProperty=link}}
+- {Show()=value of {IMDBlinkProperty=imdb link}}
+- {Show()=value of {IMDBlinkProperty=link}}
+- {Show()=value of {IMDBlinkProperty=imdb}}
+- {Show()={IMDBlinkProperty=link} values}
+- {Show()={IMDBlinkProperty=imdb link} values}
+- {Show()={IMDBlinkProperty=imdb} values}
+- {Show()={IMDBlinkProperty=imdb} selection}
+- {Show()={IMDBlinkProperty=link} selection}
+- {Show()={IMDBlinkProperty=imdb link} selection}
+
+> Help() examples for IMDBlinkProperty
+- {Help()=help {IMDBlinkProperty=link}}
+- {Help()=help {IMDBlinkProperty=imdb}}
+- {Help()=help {IMDBlinkProperty=imdb link}}
+- {Help()=help with {IMDBlinkProperty=imdb link}}
+- {Help()=help with {IMDBlinkProperty=link}}
+- {Help()=help with {IMDBlinkProperty=imdb}}
+- {Help()=what can I say for {IMDBlinkProperty=imdb}}
+- {Help()=what can I say for {IMDBlinkProperty=imdb link}}
+- {Help()=what can I say for {IMDBlinkProperty=link}}
+- {Help()={IMDBlinkProperty=link} help}
+- {Help()={IMDBlinkProperty=imdb} help}
+- {Help()={IMDBlinkProperty=imdb link} help}
+
+> Change() examples for IMDBlinkProperty
+- {Change()=change {IMDBlinkProperty=imdb link}}
+- {Change()=change {IMDBlinkProperty=imdb}}
+- {Change()=change {IMDBlinkProperty=link}}
+- {Change()=goto {IMDBlinkProperty=imdb}}
+- {Change()=goto {IMDBlinkProperty=link}}
+- {Change()=goto {IMDBlinkProperty=imdb link}}
+
+
+
+> Generator: c3b5d3cb4553f6c564cc32ee05fb149d

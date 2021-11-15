@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/BotFramework-Composer/main/Composer/packages/server/schemas/sdk.en-US.schema",
+  "$kind": "Microsoft.LuisRecognizer",
+  "applicationId": "=settings.luis.NewMovie_en_us_lu.appId",
+  "version": "=settings.luis.NewMovie_en_us_lu.version",
+  "endpoint": "=settings.luis.endpoint",
+  "endpointKey": "=settings.luis.endpointKey",
+  "predictionOptions": {
+    "includeInstanceData": true
+  },
+  "dynamicLists": "=[]",
+  "$Generator": "729831341af26e1cb670932a30b522de"
+}

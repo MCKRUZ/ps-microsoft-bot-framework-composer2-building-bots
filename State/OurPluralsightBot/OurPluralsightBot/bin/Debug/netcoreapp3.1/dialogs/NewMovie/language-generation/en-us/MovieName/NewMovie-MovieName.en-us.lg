@@ -1,0 +1,132 @@
+
+
+>> Prompts
+
+# MovieName_MissingPrompt()
+[Activity
+    Text = ${MovieName_MissingPrompt_text()}
+]
+
+# MovieName_MissingPrompt_text()
+> Prompt when 'MovieName' is missing
+- What is the Movie name?
+# MovieName_ChangePrompt()
+> Activity Prompt when 'MovieName' property has a value, but is being changed
+[Activity
+    Text = ${MovieName_ChangePrompt_text()}
+]
+
+# MovieName_ChangePrompt_text()
+> Prompt when 'MovieName' property has a value, but is being changed
+- Change "${MovieName_Value($MovieName)}" in movie name to?
+
+
+>> Confirmation
+
+# MovieName_ExpectedSetConfirmation(newVal)
+> Activity Confirmation when adding unexpected value to empty 'MovieName' property
+[Activity
+    Text = ${MovieName_ExpectedSetConfirmation_text(newVal)}
+]
+
+# MovieName_ExpectedSetConfirmation_text(newVal)
+> Confirmation when adding unexpected value to empty 'MovieName' property
+-  
+
+# MovieName_ExpectedUpdateConfirmation(newVal)
+> Activity Confirmation when replacing expected value in 'MovieName' property
+[Activity
+    Text = ${MovieName_ExpectedUpdateConfirmation_text(newVal)}
+]
+
+# MovieName_ExpectedUpdateConfirmation_text(newVal)
+> Confirmation when replacing expected value in 'MovieName' property
+- Changed movie name from ${MovieName_Value($MovieName)} to ${MovieName_Value(newVal)}
+
+# MovieName_UnexpectedSetConfirmation(newVal)
+> Activity Confirmation when adding unexpected value to empty 'MovieName' property
+[Activity
+    Text = ${MovieName_UnexpectedSetConfirmation_text(newVal)}
+]
+
+# MovieName_UnexpectedSetConfirmation_text(newVal)
+> Confirmation when adding unexpected value to empty 'MovieName' property
+- Set movie name to ${MovieName_Value(newVal)}
+
+# MovieName_UnexpectedUpdateConfirmation(newVal)
+> Activity Confirmation when replacing unexpected value in 'MovieName' property
+[Activity
+    Text = ${MovieName_UnexpectedUpdateConfirmation_text(newVal)}
+]
+
+# MovieName_UnexpectedUpdateConfirmation_text(newVal)
+> Confirmation when replacing unexpected value in 'MovieName' property
+- Changed movie name from ${MovieName_Value($MovieName)} to ${MovieName_Value(newVal)}
+
+# MovieName_RemoveConfirmation(newVal)
+> Activity Confirmation activity when value is removed from 'MovieName' property
+[Activity
+    Text = ${MovieName_RemoveConfirmation_text(newVal)}
+]
+
+# MovieName_RemoveConfirmation_text(newVal)
+> Confirmation activity when value is removed from 'MovieName' property
+- Removed ${MovieName_Value(newVal)} from movie name
+
+# MovieName_ClearConfirmation()
+> Activity Confirmation when 'MovieName' property is cleared
+[Activity
+    Text = ${MovieName_ClearConfirmation_text()}
+]
+
+# MovieName_ClearConfirmation_text()
+> Confirmation when 'MovieName' property is cleared
+- Cleared movie name
+
+>> Help
+
+# MovieName_RepromptHelp()
+> Activity Help for 'MovieName' property reprompt
+[Activity
+    Text = ${MovieName_RepromptHelp_text()}
+]
+
+# MovieName_RepromptHelp_text()
+> Help for 'MovieName' property reprompt
+- Any response is allowed for movie name
+
+# MovieName_Help()
+> Activity Help for 'MovieName' property
+[Activity
+    Text = ${MovieName_Help_text()}
+]
+
+# MovieName_Help_text()
+> Help for 'MovieName' property
+- Any response is allowed for movie name
+
+
+>> Show
+# MovieName_Show()
+> Activity Show value of 'MovieName' property
+[Activity
+    Text = ${MovieName_Show_text()}
+]
+
+# MovieName_Show_text()
+> Show value of 'MovieName' property
+- movie name: ${MovieName_Value($MovieName)}
+
+# MovieName_Name()
+> Name of the 'MovieName' property
+- movie name
+
+# MovieName_Value(val)
+> Display value for 'MovieName'
+ - IF: ${val}
+ - '${val}'
+ - ELSE:
+ - no value
+
+
+> Generator: ee70f786d2077761c08cac55c2228c88

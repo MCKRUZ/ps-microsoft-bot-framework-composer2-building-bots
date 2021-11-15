@@ -1,0 +1,356 @@
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Nuget.config
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\scripts\DeploymentTemplates\function-template-with-preexisting-rg.json
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\scripts\DeploymentTemplates\new-rg-parameters.json
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\scripts\DeploymentTemplates\preexisting-rg-parameters.json
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\scripts\DeploymentTemplates\qna-template.json
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\scripts\DeploymentTemplates\template-with-new-rg.json
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\scripts\DeploymentTemplates\template-with-preexisting-rg.json
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\scripts\package.json
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\settings\appsettings.json
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\OurPluralsightBot.dialog
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\recognizers\OurPluralsightBot.en-us.lu.dialog
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\recognizers\OurPluralsightBot.lu.dialog
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\recognizers\OurPluralsightBot.lu.qna.dialog
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\language-generation\en-us\common.en-us.lg
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\language-generation\en-us\OurPluralsightBot.en-us.lg
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\language-understanding\en-us\OurPluralsightBot.en-us.lu
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\emptyBot\knowledge-base\en-us\emptyBot.en-us.qna
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\knowledge-base\en-us\OurPluralsightBot.en-us.qna
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\OurPluralsightBot.exe
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\OurPluralsightBot.deps.json
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\OurPluralsightBot.runtimeconfig.json
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\OurPluralsightBot.runtimeconfig.dev.json
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\OurPluralsightBot.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\OurPluralsightBot.pdb
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\AdaptiveExpressions.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Antlr4.Runtime.Standard.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Azure.Core.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Azure.Storage.Blobs.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Azure.Storage.Common.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.ApplicationInsights.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.ApplicationInsights.AspNetCore.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.AI.DependencyCollector.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.AI.EventCounterCollector.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.AI.PerfCounterCollector.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.AI.WindowsServer.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.AI.ServerTelemetryChannel.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Azure.CognitiveServices.Language.LUIS.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Azure.Cosmos.Client.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Azure.Cosmos.Core.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Azure.Cosmos.Direct.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Azure.Cosmos.Serialization.HybridRow.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Azure.DocumentDB.Core.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Azure.KeyVault.Core.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Azure.Storage.Blob.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Azure.Storage.Common.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.AI.Luis.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.AI.QnA.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.ApplicationInsights.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.Azure.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.Azure.Blobs.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.Dialogs.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.Dialogs.Adaptive.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.Dialogs.Adaptive.Runtime.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.Dialogs.Declarative.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.Integration.AspNet.Core.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.LanguageGeneration.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Configuration.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Connector.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Schema.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Streaming.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DiagnosticAdapter.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.ApplicationInsights.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Recognizers.Definitions.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Recognizers.Text.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Recognizers.Text.Choice.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Recognizers.Text.DataTypes.TimexExpression.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Recognizers.Text.DateTime.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Recognizers.Text.Number.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Recognizers.Text.NumberWithUnit.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Recognizers.Text.Sequence.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Rest.ClientRuntime.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Rest.ClientRuntime.Azure.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\NuGet.Common.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\NuGet.Configuration.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\NuGet.Packaging.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\NuGet.Versioning.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Cosmos.CRTCompat.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Azure.Cosmos.ServiceInterop.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\runtimes\win7-x64\native\Cosmos.CRTCompat.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\runtimes\win7-x64\native\Microsoft.Azure.Documents.ServiceInterop.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\runtimes\win7-x64\native\sni.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\runtimes\win7-x86\native\sni.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard1.3\System.Data.SqlClient.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard1.3\System.Data.SqlClient.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\OurPluralsightBot.csproj.AssemblyReference.cache
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\OurPluralsightBot.GeneratedMSBuildEditorConfig.editorconfig
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\OurPluralsightBot.AssemblyInfoInputs.cache
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\OurPluralsightBot.AssemblyInfo.cs
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\OurPluralsightBot.csproj.CoreCompileInputs.cache
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\OurPluralsightBot.MvcApplicationPartsAssemblyInfo.cs
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\OurPluralsightBot.MvcApplicationPartsAssemblyInfo.cache
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\staticwebassets\OurPluralsightBot.StaticWebAssets.Manifest.cache
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\staticwebassets\OurPluralsightBot.StaticWebAssets.xml
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\scopedcss\bundle\OurPluralsightBot.styles.css
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\OurPluralsightBot.RazorTargetAssemblyInfo.cache
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\OurPluralsightBot.dll
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\OurPluralsightBot.pdb
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\OurPluralsightBot.genruntimeconfig.cache
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\OurPluralsightBot.en-us.lu
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\OurPluralsightBot.en-us.qna
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\OurFirstChildDialog\OurFirstChildDialog.dialog
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\OurFirstChildDialog\recognizers\OurFirstChildDialog.en-us.lu.dialog
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\OurFirstChildDialog\recognizers\OurFirstChildDialog.lu.dialog
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\OurFirstChildDialog\recognizers\OurFirstChildDialog.lu.qna.dialog
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\OurFirstChildDialog\language-generation\en-us\OurFirstChildDialog.en-us.lg
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\OurFirstChildDialog\language-understanding\en-us\OurFirstChildDialog.en-us.lu
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\OurFirstChildDialog.en-us.lu
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\OurFirstChildDialog\knowledge-base\en-us\OurFirstChildDialog.en-us.qna
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\OurFirstChildDialog.en-us.qna
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NameDialog\NameDialog.dialog
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NameDialog\recognizers\NameDialog.en-us.lu.dialog
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NameDialog\recognizers\NameDialog.lu.dialog
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NameDialog\recognizers\NameDialog.lu.qna.dialog
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NameDialog\language-generation\en-us\NameDialog.en-us.lg
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NameDialog\language-understanding\en-us\NameDialog.en-us.lu
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\NameDialog.en-us.lu
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NameDialog\knowledge-base\en-us\NameDialog.en-us.qna
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\NameDialog.en-us.qna
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\PictureDialog\PictureDialog.dialog
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\PictureDialog\recognizers\PictureDialog.en-us.lu.dialog
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\PictureDialog\recognizers\PictureDialog.lu.dialog
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\PictureDialog\recognizers\PictureDialog.lu.qna.dialog
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\PictureDialog\language-generation\en-us\PictureDialog.en-us.lg
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\PictureDialog\language-understanding\en-us\PictureDialog.en-us.lu
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\PictureDialog.en-us.lu
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\PictureDialog\knowledge-base\en-us\PictureDialog.en-us.qna
+C:\temp\Demos\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\PictureDialog.en-us.qna
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Nuget.config
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\scripts\DeploymentTemplates\function-template-with-preexisting-rg.json
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\scripts\DeploymentTemplates\new-rg-parameters.json
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\scripts\DeploymentTemplates\preexisting-rg-parameters.json
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\scripts\DeploymentTemplates\qna-template.json
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\scripts\DeploymentTemplates\template-with-new-rg.json
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\scripts\DeploymentTemplates\template-with-preexisting-rg.json
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\scripts\package.json
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NameDialog\recognizers\NameDialog.en-us.lu.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NameDialog\recognizers\NameDialog.lu.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NameDialog\recognizers\NameDialog.lu.qna.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\OurFirstChildDialog\recognizers\OurFirstChildDialog.en-us.lu.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\OurFirstChildDialog\recognizers\OurFirstChildDialog.lu.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\OurFirstChildDialog\recognizers\OurFirstChildDialog.lu.qna.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\PictureDialog\PictureDialog.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\PictureDialog\recognizers\PictureDialog.en-us.lu.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\PictureDialog\recognizers\PictureDialog.lu.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\PictureDialog\recognizers\PictureDialog.lu.qna.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\recognizers\OurPluralsightBot.en-us.lu.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\recognizers\OurPluralsightBot.lu.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\recognizers\OurPluralsightBot.lu.qna.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NameDialog\language-generation\en-us\NameDialog.en-us.lg
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\PictureDialog\language-generation\en-us\PictureDialog.en-us.lg
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\language-generation\en-us\common.en-us.lg
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\language-generation\en-us\OurPluralsightBot.en-us.lg
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NameDialog\language-understanding\en-us\NameDialog.en-us.lu
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\OurFirstChildDialog\language-understanding\en-us\OurFirstChildDialog.en-us.lu
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\PictureDialog\language-understanding\en-us\PictureDialog.en-us.lu
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\language-understanding\en-us\OurPluralsightBot.en-us.lu
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\emptyBot\knowledge-base\en-us\emptyBot.en-us.qna
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NameDialog\knowledge-base\en-us\NameDialog.en-us.qna
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\OurFirstChildDialog\knowledge-base\en-us\OurFirstChildDialog.en-us.qna
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\PictureDialog\knowledge-base\en-us\PictureDialog.en-us.qna
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\knowledge-base\en-us\OurPluralsightBot.en-us.qna
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\settings\appsettings.json
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NameDialog\NameDialog.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\OurFirstChildDialog\OurFirstChildDialog.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\ProductSelectDialog\ProductSelectDialog.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\ProductSelectDialog\recognizers\ProductSelectDialog.en-us.lu.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\ProductSelectDialog\recognizers\ProductSelectDialog.lu.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\ProductSelectDialog\recognizers\ProductSelectDialog.lu.qna.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\OurPluralsightBot.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\OurFirstChildDialog\language-generation\en-us\OurFirstChildDialog.en-us.lg
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\ProductSelectDialog\language-generation\en-us\ProductSelectDialog.en-us.lg
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\ProductSelectDialog\language-understanding\en-us\ProductSelectDialog.en-us.lu
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\NameDialog.en-us.lu
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\OurFirstChildDialog.en-us.lu
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\OurPluralsightBot.en-us.lu
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\PictureDialog.en-us.lu
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\ProductSelectDialog.en-us.lu
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\ProductSelectDialog\knowledge-base\en-us\ProductSelectDialog.en-us.qna
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\NameDialog.en-us.qna
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\OurFirstChildDialog.en-us.qna
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\OurPluralsightBot.en-us.qna
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\PictureDialog.en-us.qna
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\ProductSelectDialog.en-us.qna
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\OurPluralsightBot.exe
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\OurPluralsightBot.deps.json
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\OurPluralsightBot.runtimeconfig.json
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\OurPluralsightBot.runtimeconfig.dev.json
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\OurPluralsightBot.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\OurPluralsightBot.pdb
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\AdaptiveExpressions.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Antlr4.Runtime.Standard.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Azure.Core.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Azure.Storage.Blobs.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Azure.Storage.Common.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.ApplicationInsights.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.ApplicationInsights.AspNetCore.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.AI.DependencyCollector.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.AI.EventCounterCollector.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.AI.PerfCounterCollector.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.AI.WindowsServer.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.AI.ServerTelemetryChannel.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Azure.CognitiveServices.Language.LUIS.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Azure.Cosmos.Client.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Azure.Cosmos.Core.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Azure.Cosmos.Direct.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Azure.Cosmos.Serialization.HybridRow.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Azure.DocumentDB.Core.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Azure.KeyVault.Core.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Azure.Storage.Blob.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Azure.Storage.Common.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.AI.Luis.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.AI.QnA.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.ApplicationInsights.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.Azure.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.Azure.Blobs.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.Dialogs.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.Dialogs.Adaptive.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.Dialogs.Adaptive.Runtime.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.Dialogs.Declarative.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.Integration.AspNet.Core.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Builder.LanguageGeneration.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Configuration.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Connector.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Schema.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Bot.Streaming.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DiagnosticAdapter.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.ApplicationInsights.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Recognizers.Definitions.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Recognizers.Text.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Recognizers.Text.Choice.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Recognizers.Text.DataTypes.TimexExpression.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Recognizers.Text.DateTime.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Recognizers.Text.Number.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Recognizers.Text.NumberWithUnit.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Recognizers.Text.Sequence.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Rest.ClientRuntime.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Microsoft.Rest.ClientRuntime.Azure.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\NuGet.Common.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\NuGet.Configuration.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\NuGet.Packaging.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\NuGet.Versioning.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Cosmos.CRTCompat.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Azure.Cosmos.ServiceInterop.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\runtimes\win7-x64\native\Cosmos.CRTCompat.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\runtimes\win7-x64\native\Microsoft.Azure.Documents.ServiceInterop.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\runtimes\win7-x64\native\sni.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\runtimes\win7-x86\native\sni.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard1.3\System.Data.SqlClient.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard1.3\System.Data.SqlClient.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\OurPluralsightBot.csproj.AssemblyReference.cache
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\OurPluralsightBot.GeneratedMSBuildEditorConfig.editorconfig
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\OurPluralsightBot.AssemblyInfoInputs.cache
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\OurPluralsightBot.AssemblyInfo.cs
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\OurPluralsightBot.csproj.CoreCompileInputs.cache
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\OurPluralsightBot.MvcApplicationPartsAssemblyInfo.cs
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\OurPluralsightBot.MvcApplicationPartsAssemblyInfo.cache
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\staticwebassets\OurPluralsightBot.StaticWebAssets.Manifest.cache
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\staticwebassets\OurPluralsightBot.StaticWebAssets.xml
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\scopedcss\bundle\OurPluralsightBot.styles.css
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\OurPluralsightBot.RazorTargetAssemblyInfo.cache
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\OurPluralsightBot.dll
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\OurPluralsightBot.pdb
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\OurPluralsightBot.genruntimeconfig.cache
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\ProductSearchDialog\ProductSearchDialog.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\ProductSearchDialog\recognizers\ProductSearchDialog.en-us.lu.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\ProductSearchDialog\recognizers\ProductSearchDialog.lu.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\ProductSearchDialog\recognizers\ProductSearchDialog.lu.qna.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\ProductSearchDialog\language-generation\en-us\ProductSearchDialog.en-us.lg
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\ProductSearchDialog\language-understanding\en-us\ProductSearchDialog.en-us.lu
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\ProductSearchDialog.en-us.lu
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\ProductSearchDialog\knowledge-base\en-us\ProductSearchDialog.en-us.qna
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\ProductSearchDialog.en-us.qna
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\luconfig.json
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\NewMovie.json
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\generated\luis.settings.composer.westus.json
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\NewMovie.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\recognizers\NewMovie.en-us.lu.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\recognizers\NewMovie.lu.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\recognizers\NewMovie.lu.qna.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-generation\en-us\form\NewMovie-booleanEntity.en-us.lg
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-generation\en-us\form\NewMovie-form-DisplayOperation.en-us.lg
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-generation\en-us\form\NewMovie-form-extensions.en-us.lg
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-generation\en-us\form\NewMovie-form-prompts.en-us.lg
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-generation\en-us\form\NewMovie-numberValue.en-us.lg
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-generation\en-us\form\NewMovie-stringValue.en-us.lg
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-generation\en-us\form\NewMovie-urlValue.en-us.lg
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-generation\en-us\form\NewMovie-utteranceValue.en-us.lg
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-generation\en-us\GenreValue\NewMovie-GenreValue.en-us.lg
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-generation\en-us\Genre\NewMovie-Genre.en-us.lg
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-generation\en-us\IMDBlink\NewMovie-IMDBlink.en-us.lg
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-generation\en-us\MovieName\NewMovie-MovieName.en-us.lg
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-generation\en-us\NewMovie.en-us.lg
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-generation\en-us\Rating\NewMovie-Rating.en-us.lg
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-understanding\en-us\form\NewMovie-booleanEntity.en-us.lu
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-understanding\en-us\form\NewMovie-form-global.en-us.lu
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-understanding\en-us\form\NewMovie-form-NoneIntent.en-us.lu
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-understanding\en-us\form\NewMovie-form-phrases.en-us.lu
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-understanding\en-us\Genre\NewMovie-Genre-GenreValue.en-us.lu
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-understanding\en-us\IMDBlink\NewMovie-IMDBlink-url.en-us.lu
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-understanding\en-us\MovieName\NewMovie-MovieName-MovieNameValue.en-us.lu
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-understanding\en-us\MovieName\NewMovie-MovieName-utterance.en-us.lu
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-understanding\en-us\NewMovie-definition.en-us.lu
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-understanding\en-us\NewMovie.en-us.lu
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\language-understanding\en-us\Rating\NewMovie-Rating-number.en-us.lu
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\NewMovie.en-us.lu
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\dialogs\NewMovie\knowledge-base\en-us\NewMovie.en-us.qna
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\NewMovie.en-us.qna
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Taking Your Conversation To The Next Level With State\OurPluralsightBot\OurPluralsightBot\obj\Debug\netcoreapp3.1\OurPluralsightBot.csproj.CopyComplete

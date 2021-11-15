@@ -1,0 +1,32 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "uwsofx",
+    "name": "ProductSearchDialog",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "mBV4lK"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "5cUOvq"
+          },
+          "activity": "${SendActivity_5cUOvq()}"
+        }
+      ]
+    }
+  ],
+  "generator": "ProductSearchDialog.lg",
+  "recognizer": "ProductSearchDialog.lu.qna",
+  "id": "ProductSearchDialog"
+}

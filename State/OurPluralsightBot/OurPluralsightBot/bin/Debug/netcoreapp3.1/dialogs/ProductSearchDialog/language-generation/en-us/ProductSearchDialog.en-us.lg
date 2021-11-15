@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# SendActivity_5cUOvq()
+[Activity
+    Text = ${SendActivity_5cUOvq_text()}
+]
+
+# SendActivity_5cUOvq_text()
+- Searching for product number ${dialog.productNumber}

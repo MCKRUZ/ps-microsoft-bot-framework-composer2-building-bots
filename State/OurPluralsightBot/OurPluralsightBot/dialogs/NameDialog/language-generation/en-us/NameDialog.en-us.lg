@@ -1,0 +1,44 @@
+[import](common.lg)
+
+# TextInput_Prompt_iRljGQ()
+[Activity
+    Text = ${TextInput_Prompt_iRljGQ_text()}
+]
+
+# TextInput_Prompt_iRljGQ_text()
+- What is your name?
+# TextInput_UnrecognizedPrompt_iRljGQ()
+[Activity
+    Text = ${TextInput_UnrecognizedPrompt_iRljGQ_text()}
+]
+
+# TextInput_UnrecognizedPrompt_iRljGQ_text()
+- Yeah...I don't get it.
+# TextInput_DefaultValueResponse_iRljGQ()
+[Activity
+    Text = ${TextInput_DefaultValueResponse_iRljGQ_text()}
+]
+
+# TextInput_DefaultValueResponse_iRljGQ_text()
+- Ok so you don't want to tell me your name so I will pick a name for you.
+# TextInput_InvalidPrompt_iRljGQ()
+[Activity
+    Text = ${TextInput_InvalidPrompt_iRljGQ_text()}
+]
+
+# TextInput_InvalidPrompt_iRljGQ_text()
+- I'm sorry you're name has to be between 2 and 10 characters.
+# SendActivity_dWOOhy()
+[Activity
+    Text = ${SendActivity_dWOOhy_text()}
+]
+
+# SendActivity_dWOOhy_text()
+- Hi ${user.name}. How can I help you today?
+# ConfirmInput_Prompt_N5DyJ9()
+[Activity
+    Text = ${ConfirmInput_Prompt_N5DyJ9_text()}
+]
+
+# ConfirmInput_Prompt_N5DyJ9_text()
+- Are you sure your name is ${user.name}?

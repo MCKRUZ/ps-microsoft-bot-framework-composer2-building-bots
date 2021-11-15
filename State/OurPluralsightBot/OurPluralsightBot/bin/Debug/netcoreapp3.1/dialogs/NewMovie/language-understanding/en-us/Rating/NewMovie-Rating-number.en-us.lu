@@ -1,0 +1,112 @@
+
+@ prebuilt number
+
+
+> Define phrase list for 'Rating property.
+@ phraselist RatingPhrases(interchangeable) disabledForAllModels =
+        - rating
+
+> Define property entity and optional value for 'Rating' property.
+@ ml RatingProperty usesFeature RatingPhrases
+    - @ number number
+
+> Define operations on 'Rating' property.
+@ ml Assign() usesFeature AssignPhrases
+    -@ ml RatingProperty usesFeature RatingProperty
+        - @ number number
+
+@ ml Remove() usesFeature RemovePhrases
+    -@ ml RatingProperty usesFeature RatingProperty
+        - @ number number
+
+@ ml Clear() usesFeature ClearPhrases
+    -@ ml RatingProperty usesFeature RatingProperty
+        - @ number number
+
+@ ml Change() usesFeature ChangePhrases
+    -@ ml RatingProperty usesFeature RatingProperty
+        - @ number number
+
+@ ml Show() usesFeature ShowPhrases
+    -@ ml RatingProperty usesFeature RatingProperty
+        - @ number number
+
+@ ml Help() usesFeature HelpPhrases
+    -@ ml RatingProperty usesFeature RatingProperty
+        - @ number number
+
+
+> Assign examples for operations on the 'Rating' property to the intent 'NewMovie'.
+# NewMovie
+>> entity: Standalone RatingProperty with number
+- {RatingProperty={number=1}}
+- {RatingProperty={number=32.4}}
+- {RatingProperty={number=99}}
+- {RatingProperty={number=215}}
+- {RatingProperty={number=1000}}
+- {RatingProperty={number=1} rating}
+- {RatingProperty={number=32.4} rating}
+- {RatingProperty={number=99} rating}
+- {RatingProperty={number=215} rating}
+- {RatingProperty={number=1000} rating}
+
+>> property: Standalone RatingProperty name
+- {RatingProperty=rating}
+
+> Assign() examples for RatingProperty and number
+- {Assign()=add {RatingProperty={number=215} rating}}
+- {Assign()=add {RatingProperty={number=99} rating}}
+- {Assign()=add {RatingProperty={number=1} rating}}
+- {Assign()=add {RatingProperty={number=32.4} rating}}
+- {Assign()=with {RatingProperty={number=1000}}}
+- {Assign()=with {RatingProperty={number=99}}}
+- {Assign()=with {RatingProperty={number=215}}}
+- {Assign()=with {RatingProperty={number=32.4}}}
+- {Assign()=with {RatingProperty={number=1}}}
+- {Assign()={RatingProperty=rating is {number=1000}}}
+- {Assign()={RatingProperty=rating is {number=215}}}
+- {Assign()={RatingProperty=rating is {number=99}}}
+- {Assign()={RatingProperty=rating is {number=1}}}
+- {Assign()={RatingProperty=rating of {number=99}}}
+- {Assign()={RatingProperty=rating of {number=32.4}}}
+- {Assign()={RatingProperty=rating of {number=215}}}
+- {Assign()={RatingProperty=rating of {number=1000}}}
+- {Assign()={RatingProperty=rating of {number=1}}}
+- {Assign()={RatingProperty=rating are {number=1}}}
+- {Assign()={RatingProperty=rating are {number=1000}}}
+- {Assign()={RatingProperty=rating are {number=215}}}
+- {Assign()={RatingProperty=rating are {number=32.4}}}
+
+> Remove() examples for RatingProperty and number
+- {Remove()=remove {RatingProperty={number=32.4}}
+- {Remove()=remove {RatingProperty={number=1}}
+- {Remove()=remove {RatingProperty={number=99}}
+- {Remove()=remove {RatingProperty={number=215}}
+- {Remove()=with no {RatingProperty={number=215} rating}
+- {Remove()=with no {RatingProperty={number=99} rating}
+- {Remove()=with no {RatingProperty={number=1} rating}
+- {Remove()=with no {RatingProperty={number=32.4} rating}
+
+> Clear() examples for RatingProperty
+- {Clear()=clear {RatingProperty=rating}}
+- {Clear()=reset {RatingProperty=rating}}
+
+> Show() examples for RatingProperty
+- {Show()=show {RatingProperty=rating}}
+- {Show()=value of {RatingProperty=rating}}
+- {Show()={RatingProperty=rating} values}
+- {Show()={RatingProperty=rating} selection}
+
+> Help() examples for RatingProperty
+- {Help()=help {RatingProperty=rating}}
+- {Help()=help with {RatingProperty=rating}}
+- {Help()=what can I say for {RatingProperty=rating}}
+- {Help()={RatingProperty=rating} help}
+
+> Change() examples for RatingProperty
+- {Change()=change {RatingProperty=rating}}
+- {Change()=goto {RatingProperty=rating}}
+
+
+
+> Generator: 7124d41ecf737091240c9720eafc71d3

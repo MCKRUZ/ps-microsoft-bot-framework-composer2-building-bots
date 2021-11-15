@@ -1,0 +1,6 @@
+
+# stringValue_Value(entity)
+> Display value for 'string' entity
+- ${entity.text}
+
+> Generator: dd34a87c8c169372b976a04a46202c77

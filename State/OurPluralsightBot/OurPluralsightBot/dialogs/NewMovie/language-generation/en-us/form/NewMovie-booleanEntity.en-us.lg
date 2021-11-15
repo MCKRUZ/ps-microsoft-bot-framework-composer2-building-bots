@@ -1,0 +1,12 @@
+
+# booleanEntity_Value(value)
+> Display value for a boolean entity
+- SWITCH: ${value}
+- CASE: ${'true'}
+    - true  
+- CASE: ${'false'}
+    - false
+- DEFAULT:
+    - no value
+
+> Generator: 731a411498eea7eca96bfc485b178c32

@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "MovieName": {
+      "$ref": "template:string"
+    },
+    "Genre": {
+      "$ref": "template:enum",
+      "enum": [
+        "Action",
+        "Comedy",
+        "Drama",
+        "Fantasy",
+        "Horror",
+        "Mystery",
+        "Romance",
+        "Thriller"
+      ],
+      "$examples": {
+        "en-us": {
+          "GenreValue": {
+            "Action": [],
+            "Comedy": [],
+            "Drama": [],
+            "Fantasy": [],
+            "Horror": [],
+            "Mystery": [],
+            "Romance": [],
+            "Thriller": [
+              "disaster thriller",
+              "crime thriller"
+            ]
+          }
+        }
+      }
+    },
+    "Rating": {
+      "$ref": "template:number",
+      "minimum": 0,
+      "maximum": 5
+    },
+    "IMDBlink": {
+      "$ref": "template:uri"
+    }
+  },
+  "required": [
+    "MovieName",
+    "Genre",
+    "Rating"
+  ]
+}

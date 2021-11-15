@@ -1,0 +1,128 @@
+
+[NewMovie-form-extensions.en-us.lg](../form/NewMovie-form-extensions.en-us.lg)
+[GenreValue](../GenreValue/NewMovie-GenreValue.en-us.lg)
+
+>> Prompts
+
+# Genre_MissingPrompt()
+[Activity
+    Text = ${Genre_MissingPrompt_text()}
+]
+
+# Genre_MissingPrompt_text()
+> Prompt when 'Genre' is missing
+- What is the Movie Genre?
+# Genre_ChangePrompt()
+> Activity Prompt when 'Genre' property has a value, but is being changed
+[Activity
+    Text = ${Genre_ChangePrompt_text()}
+]
+
+# Genre_ChangePrompt_text()
+> Prompt when 'Genre' property has a value, but is being changed
+- Change "${Genre_Value($Genre)}" in genre to?
+
+
+>> Confirmation
+
+# Genre_ExpectedSetConfirmation(newVal)
+> Activity Confirmation when adding unexpected value to empty 'Genre' property
+[Activity
+    Text = ${Genre_ExpectedSetConfirmation_text(newVal)}
+]
+
+# Genre_ExpectedSetConfirmation_text(newVal)
+> Confirmation when adding unexpected value to empty 'Genre' property
+-  
+
+# Genre_ExpectedUpdateConfirmation(newVal)
+> Activity Confirmation when replacing expected value in 'Genre' property
+[Activity
+    Text = ${Genre_ExpectedUpdateConfirmation_text(newVal)}
+]
+
+# Genre_ExpectedUpdateConfirmation_text(newVal)
+> Confirmation when replacing expected value in 'Genre' property
+- Changed genre from ${Genre_Value($Genre)} to ${Genre_Value(newVal)}
+
+# Genre_UnexpectedSetConfirmation(newVal)
+> Activity Confirmation when adding unexpected value to empty 'Genre' property
+[Activity
+    Text = ${Genre_UnexpectedSetConfirmation_text(newVal)}
+]
+
+# Genre_UnexpectedSetConfirmation_text(newVal)
+> Confirmation when adding unexpected value to empty 'Genre' property
+- Set genre to ${Genre_Value(newVal)}
+
+# Genre_UnexpectedUpdateConfirmation(newVal)
+> Activity Confirmation when replacing unexpected value in 'Genre' property
+[Activity
+    Text = ${Genre_UnexpectedUpdateConfirmation_text(newVal)}
+]
+
+# Genre_UnexpectedUpdateConfirmation_text(newVal)
+> Confirmation when replacing unexpected value in 'Genre' property
+- Changed genre from ${Genre_Value($Genre)} to ${Genre_Value(newVal)}
+
+# Genre_RemoveConfirmation(newVal)
+> Activity Confirmation activity when value is removed from 'Genre' property
+[Activity
+    Text = ${Genre_RemoveConfirmation_text(newVal)}
+]
+
+# Genre_RemoveConfirmation_text(newVal)
+> Confirmation activity when value is removed from 'Genre' property
+- Removed ${Genre_Value(newVal)} from genre
+
+# Genre_ClearConfirmation()
+> Activity Confirmation when 'Genre' property is cleared
+[Activity
+    Text = ${Genre_ClearConfirmation_text()}
+]
+
+# Genre_ClearConfirmation_text()
+> Confirmation when 'Genre' property is cleared
+- Cleared genre
+
+>> Help
+
+# Genre_RepromptHelp()
+> Activity Help for 'Genre' property reprompt
+[Activity
+    Text = ${Genre_RepromptHelp_text()}
+]
+
+# Genre_RepromptHelp_text()
+> Help for 'Genre' property reprompt
+- Possible values for genre include: ${possibleValuesList(`Genre`)}
+
+# Genre_Help()
+> Activity Help for 'Genre' property
+[Activity
+    Text = ${Genre_Help_text()}
+]
+
+# Genre_Help_text()
+> Help for 'Genre' property
+- Possible values for genre include: ${possibleValuesList(`Genre`)}
+
+>> Show
+# Genre_Show()
+> Activity Show value of 'Genre' property
+[Activity
+    Text = ${Genre_Show_text()}
+]
+
+# Genre_Show_text()
+> Show value of 'Genre' property
+- genre: ${Genre_Value($Genre)}
+
+# Genre_Name()
+> Name of the 'Genre' property
+- genre
+
+# Genre_Value(val)
+- '${GenreEnum_Value(val)}'
+
+> Generator: ee3d1655a0b0d354269605b0686fed62

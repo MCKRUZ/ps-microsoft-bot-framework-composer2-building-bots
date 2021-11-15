@@ -1,0 +1,155 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "name": "OurPluralsightBot",
+    "description": "",
+    "id": "A79tBe"
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnConversationUpdateActivity",
+      "$designer": {
+        "id": "376720"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.Foreach",
+          "$designer": {
+            "id": "518944",
+            "name": "Loop: for each item"
+          },
+          "itemsProperty": "turn.Activity.membersAdded",
+          "actions": [
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "641773",
+                "name": "Branch: if/else"
+              },
+              "condition": "string(dialog.foreach.value.id) != string(turn.Activity.Recipient.id)",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "859266",
+                    "name": "Send a response"
+                  },
+                  "activity": "${SendActivity_Greeting()}"
+                },
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "sHOzKO"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "NewMovie",
+                  "resultProperty": "dialog.formValues"
+                },
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "dTZAJY"
+                  },
+                  "activity": "${SendActivity_dTZAJY()}"
+                },
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "7QqMjV"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "ProductSelectDialog",
+                  "resultProperty": "dialog.productSelectResult",
+                  "disabled": true
+                },
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "1pob2J"
+                  },
+                  "activity": "${SendActivity_1pob2J()}",
+                  "disabled": true
+                },
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "W3NQiR"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "ProductSearchDialog",
+                  "options": {
+                    "productNumber": "${dialog.productSelectResult.productNumber}"
+                  },
+                  "disabled": true
+                },
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "qWF3ZV"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "OurFirstChildDialog",
+                  "disabled": true
+                },
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "0pqvAL"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "NameDialog",
+                  "disabled": true
+                },
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "dbuVO3"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "PictureDialog",
+                  "disabled": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnUnknownIntent",
+      "$designer": {
+        "id": "mb2n1u"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "kMjqz1"
+          },
+          "activity": "${SendActivity_DidNotUnderstand()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnTypingActivity",
+      "$designer": {
+        "id": "3uV42g",
+        "name": "User is typing (Typing activity)"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "jnIlG1"
+          },
+          "activity": "${SendActivity_jnIlG1()}"
+        }
+      ]
+    }
+  ],
+  "generator": "OurPluralsightBot.lg",
+  "id": "OurPluralsightBot",
+  "recognizer": "OurPluralsightBot.lu.qna"
+}

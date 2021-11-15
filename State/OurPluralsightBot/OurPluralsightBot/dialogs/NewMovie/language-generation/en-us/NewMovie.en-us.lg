@@ -1,0 +1,17 @@
+[Genre](Genre/NewMovie-Genre.en-us.lg)
+[GenreValue](GenreValue/NewMovie-GenreValue.en-us.lg)
+[IMDBlink](IMDBlink/NewMovie-IMDBlink.en-us.lg)
+[MovieName](MovieName/NewMovie-MovieName.en-us.lg)
+[Rating](Rating/NewMovie-Rating.en-us.lg)
+[booleanEntity](form/NewMovie-booleanEntity.en-us.lg)
+[form-DisplayOperation](form/NewMovie-form-DisplayOperation.en-us.lg)
+[form-extensions](form/NewMovie-form-extensions.en-us.lg)
+[form-prompts](form/NewMovie-form-prompts.en-us.lg)
+[numberValue](form/NewMovie-numberValue.en-us.lg)
+[stringValue](form/NewMovie-stringValue.en-us.lg)
+[urlValue](form/NewMovie-urlValue.en-us.lg)
+[utteranceValue](form/NewMovie-utteranceValue.en-us.lg)
+
+> Generator: c7edea71eb1523e11fa5e1c5875a6d4a
+# Rating_TooSmall()
+-

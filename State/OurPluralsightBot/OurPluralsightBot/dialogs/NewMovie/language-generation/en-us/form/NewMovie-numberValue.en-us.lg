@@ -1,0 +1,6 @@
+[NewMovie-form-extensions.en-us.lg](../form/NewMovie-form-extensions.en-us.lg)
+> Display value for 'number' entity
+# numberValue_Value(entity)
+- ${value(entity.value)}
+
+> Generator: 9f763131f2f39614dcc52b343f3008f0

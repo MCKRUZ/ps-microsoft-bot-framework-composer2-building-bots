@@ -1,0 +1,1107 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/BotFramework-Composer/main/Composer/packages/server/schemas/sdk.en-US.schema",
+  "id": "NewMovie",
+  "$kind": "Microsoft.AdaptiveDialog",
+  "recognizer": "NewMovie.lu.qna",
+  "generator": "NewMovie.lg",
+  "schema": "NewMovie.json",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnEndOfActions",
+      "condition": "!$MovieName",
+      "priority": "=form.missingPriority(['MovieName'])",
+      "actions": [
+        {
+          "$kind": "Microsoft.Ask",
+          "activity": "${MovieName_MissingPrompt()}",
+          "expectedProperties": [
+            "MovieName"
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Missing Prompt"
+      },
+      "$source": "NewMovie-MovieName-missing",
+      "$Generator": "a2f2b762de0c485c033b6a2893a8a0ab"
+    },
+    {
+      "$kind": "Microsoft.OnEndOfActions",
+      "condition": "$PropertyToChange == 'MovieName'",
+      "priority": 1,
+      "actions": [
+        {
+          "$kind": "Microsoft.Ask",
+          "activity": "${MovieName_ChangePrompt()}",
+          "expectedProperties": [
+            "MovieName"
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Replacement Prompt"
+      },
+      "$source": "NewMovie-MovieName-change",
+      "$Generator": "5407f4af225ae436282d44ada28e1de1"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Assign()",
+      "property": "MovieName",
+      "value": "MovieNameValue",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "${confirmationActivity('MovieName', @MovieNameValue)}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "property": "$MovieName",
+          "value": "=@MovieNameValue"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "condition": "$PropertyToChange == 'MovieName'",
+          "actions": [
+            {
+              "$kind": "Microsoft.DeleteProperty",
+              "property": "$PropertyToChange"
+            }
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Assign @MovieNameValue"
+      },
+      "$source": "NewMovie-MovieName-assign-MovieNameValue",
+      "$Generator": "4de78a0e4520a77c32ce6b3a4ab42c3b"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Assign()",
+      "property": "MovieName",
+      "value": "utterance",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "${confirmationActivity('MovieName', @utterance)}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "property": "$MovieName",
+          "value": "=@utterance"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "condition": "$PropertyToChange == 'MovieName'",
+          "actions": [
+            {
+              "$kind": "Microsoft.DeleteProperty",
+              "property": "$PropertyToChange"
+            }
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Assign @utterance"
+      },
+      "$source": "NewMovie-MovieName-assign-utterance",
+      "$Generator": "d25e662d10ffd34a5cd8e17bbf6e931d"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Remove()",
+      "property": "MovieName",
+      "value": "MovieNameValue",
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "condition": "$MovieName == @MovieNameValue",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "activity": "${MovieName_RemoveConfirmation(@MovieNameValue)}"
+            },
+            {
+              "$kind": "Microsoft.DeleteProperty",
+              "property": "$MovieName"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "condition": "$PropertyToChange == 'MovieName'",
+              "actions": [
+                {
+                  "$kind": "Microsoft.DeleteProperty",
+                  "property": "$PropertyToChange"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Remove @MovieNameValue"
+      },
+      "$source": "NewMovie-MovieName-remove-MovieNameValue",
+      "$Generator": "31038f84a9ea6411ee4b049ee8bc7eb3"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Remove()",
+      "property": "MovieName",
+      "value": "utterance",
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "condition": "$MovieName == @utterance",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "activity": "${MovieName_RemoveConfirmation(@utterance)}"
+            },
+            {
+              "$kind": "Microsoft.DeleteProperty",
+              "property": "$MovieName"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "condition": "$PropertyToChange == 'MovieName'",
+              "actions": [
+                {
+                  "$kind": "Microsoft.DeleteProperty",
+                  "property": "$PropertyToChange"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Remove @utterance"
+      },
+      "$source": "NewMovie-MovieName-remove-utterance",
+      "$Generator": "0e6b457e40404db66711291e9ac42500"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Clear()",
+      "property": "MovieName",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "${MovieName_ClearConfirmation()}"
+        },
+        {
+          "$kind": "Microsoft.DeleteProperty",
+          "property": "$MovieName"
+        }
+      ],
+      "$designer": {
+        "name": "Clear Property"
+      },
+      "$source": "NewMovie-MovieName-clear",
+      "$Generator": "f0a5a884f11e73df87a480b392287019"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Show()",
+      "property": "MovieName",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "${MovieName_Show()}"
+        }
+      ],
+      "$designer": {
+        "name": "Show Value"
+      },
+      "$source": "NewMovie-MovieName-show",
+      "$Generator": "f33d21bd0c687687807f134fc08c06d7"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Help()",
+      "property": "MovieName",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "${MovieName_Help()}"
+        }
+      ],
+      "$designer": {
+        "name": "Help"
+      },
+      "$source": "NewMovie-MovieName-help",
+      "$Generator": "481e07359be7ec9b6aa5dc1e66b5d854"
+    },
+    {
+      "$kind": "Microsoft.OnEndOfActions",
+      "condition": "!$Genre",
+      "priority": "=form.missingPriority(['Genre'])",
+      "actions": [
+        {
+          "$kind": "Microsoft.Ask",
+          "activity": "${Genre_MissingPrompt()}",
+          "expectedProperties": [
+            "Genre"
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Missing Prompt"
+      },
+      "$source": "NewMovie-Genre-missing",
+      "$Generator": "9f67158cfd0a5edb24e0f0bb83d14f1c"
+    },
+    {
+      "$kind": "Microsoft.OnEndOfActions",
+      "condition": "$PropertyToChange == 'Genre'",
+      "priority": 1,
+      "actions": [
+        {
+          "$kind": "Microsoft.Ask",
+          "activity": "${Genre_ChangePrompt()}",
+          "expectedProperties": [
+            "Genre"
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Replacement Prompt"
+      },
+      "$source": "NewMovie-Genre-change",
+      "$Generator": "cf474245d316c12af6611156b0d13ee0"
+    },
+    {
+      "$kind": "Microsoft.OnChooseEntity",
+      "value": "GenreValue",
+      "actions": [
+        {
+          "$kind": "Microsoft.Ask",
+          "activity": "${GenreValue_chooseEntity()}",
+          "expectedProperties": [
+            "Genre"
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "GenreValue - Disambiguation Prompt"
+      },
+      "$source": "NewMovie-GenreValue-choose",
+      "$Generator": "be33eefdcfaf48626a31a859151bb1af"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Assign()",
+      "property": "Genre",
+      "value": "GenreValue",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "${confirmationActivity('Genre', @GenreValue)}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "property": "$Genre",
+          "value": "=@GenreValue"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "condition": "$PropertyToChange == 'Genre'",
+          "actions": [
+            {
+              "$kind": "Microsoft.DeleteProperty",
+              "property": "$PropertyToChange"
+            }
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Assign @GenreValue"
+      },
+      "$source": "NewMovie-Genre-assign-GenreValue",
+      "$Generator": "706d76de1328cc923d5ef70192e74180"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Remove()",
+      "property": "Genre",
+      "value": "GenreValue",
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "condition": "$Genre == @GenreValue",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "activity": "${Genre_RemoveConfirmation(@GenreValue)}"
+            },
+            {
+              "$kind": "Microsoft.DeleteProperty",
+              "property": "$Genre"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "condition": "$PropertyToChange == 'Genre'",
+              "actions": [
+                {
+                  "$kind": "Microsoft.DeleteProperty",
+                  "property": "$PropertyToChange"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Remove @GenreValue"
+      },
+      "$source": "NewMovie-Genre-remove-GenreValue",
+      "$Generator": "3648a9c8a6e0faefac55543a51ac98f0"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Clear()",
+      "property": "Genre",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "${Genre_ClearConfirmation()}"
+        },
+        {
+          "$kind": "Microsoft.DeleteProperty",
+          "property": "$Genre"
+        }
+      ],
+      "$designer": {
+        "name": "Clear Property"
+      },
+      "$source": "NewMovie-Genre-clear",
+      "$Generator": "46e98c2f6b9a293acd8ca74a08f9772d"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Show()",
+      "property": "Genre",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "${Genre_Show()}"
+        }
+      ],
+      "$designer": {
+        "name": "Show Value"
+      },
+      "$source": "NewMovie-Genre-show",
+      "$Generator": "1e15401299b2691e1d66025aaeda3e33"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Help()",
+      "property": "Genre",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "${Genre_Help()}"
+        }
+      ],
+      "$designer": {
+        "name": "Help"
+      },
+      "$source": "NewMovie-Genre-help",
+      "$Generator": "afd500df02323b50c579598b2a29c1ae"
+    },
+    {
+      "$kind": "Microsoft.OnEndOfActions",
+      "condition": "!$Rating",
+      "priority": "=form.missingPriority(['Rating'])",
+      "actions": [
+        {
+          "$kind": "Microsoft.Ask",
+          "activity": "${Rating_MissingPrompt()}",
+          "expectedProperties": [
+            "Rating"
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Missing Prompt"
+      },
+      "$source": "NewMovie-Rating-missing",
+      "$Generator": "f3a6b5aae0168a23d2840c0248e0e8de"
+    },
+    {
+      "$kind": "Microsoft.OnEndOfActions",
+      "condition": "$PropertyToChange == 'Rating'",
+      "priority": 1,
+      "actions": [
+        {
+          "$kind": "Microsoft.Ask",
+          "activity": "${Rating_ChangePrompt()}",
+          "expectedProperties": [
+            "Rating"
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Replacement Prompt"
+      },
+      "$source": "NewMovie-Rating-change",
+      "$Generator": "5f4a6d59f92f19a788fa5ca97b251bdb"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Assign()",
+      "property": "Rating",
+      "value": "number",
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "condition": "@number < dialogClass.schema.properties.Rating.minimum",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "activity": "${Rating_TooSmall(@number)}"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.IfCondition",
+              "condition": "@number > dialogClass.schema.properties.Rating.maximum",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "activity": "${Rating_TooBig(@number)}"
+                }
+              ],
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "activity": "${confirmationActivity('Rating', @number)}"
+                },
+                {
+                  "$kind": "Microsoft.SetProperty",
+                  "property": "$Rating",
+                  "value": "=@number"
+                },
+                {
+                  "$kind": "Microsoft.IfCondition",
+                  "condition": "$PropertyToChange == 'Rating'",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.DeleteProperty",
+                      "property": "$PropertyToChange"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Assign @number"
+      },
+      "$source": "NewMovie-Rating-assign-number",
+      "$Generator": "7ddc20ebfefad8a691c7fd52b22f73b0"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Remove()",
+      "property": "Rating",
+      "value": "number",
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "condition": "$Rating == @number",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "activity": "${Rating_RemoveConfirmation(@number)}"
+            },
+            {
+              "$kind": "Microsoft.DeleteProperty",
+              "property": "$Rating"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "condition": "$PropertyToChange == 'Rating'",
+              "actions": [
+                {
+                  "$kind": "Microsoft.DeleteProperty",
+                  "property": "$PropertyToChange"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Remove @number"
+      },
+      "$source": "NewMovie-Rating-remove-number",
+      "$Generator": "98cef4cd3c55e08961a23d71ce1ba83a"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Clear()",
+      "property": "Rating",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "${Rating_ClearConfirmation()}"
+        },
+        {
+          "$kind": "Microsoft.DeleteProperty",
+          "property": "$Rating"
+        }
+      ],
+      "$designer": {
+        "name": "Clear Property"
+      },
+      "$source": "NewMovie-Rating-clear",
+      "$Generator": "b249e87390204ea1163de0fda07f9cc7"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Show()",
+      "property": "Rating",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "${Rating_Show()}"
+        }
+      ],
+      "$designer": {
+        "name": "Show Value"
+      },
+      "$source": "NewMovie-Rating-show",
+      "$Generator": "f9abcac4ef026cfb69df5f38e6a48941"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Help()",
+      "property": "Rating",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "${Rating_Help()}"
+        }
+      ],
+      "$designer": {
+        "name": "Help"
+      },
+      "$source": "NewMovie-Rating-help",
+      "$Generator": "69f8823cafad3b6a800e0a185fd4a584"
+    },
+    {
+      "$kind": "Microsoft.OnEndOfActions",
+      "condition": "!$IMDBlink",
+      "priority": "=form.missingPriority(['IMDBlink'])",
+      "actions": [
+        {
+          "$kind": "Microsoft.Ask",
+          "activity": "${IMDBlink_MissingPrompt()}",
+          "expectedProperties": [
+            "IMDBlink"
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Missing Prompt"
+      },
+      "$source": "NewMovie-IMDBlink-missing",
+      "$Generator": "b064d5a9e80574203919f5df6f8b276e"
+    },
+    {
+      "$kind": "Microsoft.OnEndOfActions",
+      "condition": "$PropertyToChange == 'IMDBlink'",
+      "priority": 1,
+      "actions": [
+        {
+          "$kind": "Microsoft.Ask",
+          "activity": "${IMDBlink_ChangePrompt()}",
+          "expectedProperties": [
+            "IMDBlink"
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Replacement Prompt"
+      },
+      "$source": "NewMovie-IMDBlink-change",
+      "$Generator": "0b0527f226133a90333f0fe94c216aab"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Assign()",
+      "property": "IMDBlink",
+      "value": "url",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "${confirmationActivity('IMDBlink', @url)}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "property": "$IMDBlink",
+          "value": "=@url"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "condition": "$PropertyToChange == 'IMDBlink'",
+          "actions": [
+            {
+              "$kind": "Microsoft.DeleteProperty",
+              "property": "$PropertyToChange"
+            }
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Assign @url"
+      },
+      "$source": "NewMovie-IMDBlink-assign-url",
+      "$Generator": "bd28a2a62c341ec9c2d41d498f03daca"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Assign()",
+      "property": "IMDBlink",
+      "value": "utterance",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "${confirmationActivity('IMDBlink', @utterance)}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "property": "$IMDBlink",
+          "value": "=@utterance"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "condition": "$PropertyToChange == 'IMDBlink'",
+          "actions": [
+            {
+              "$kind": "Microsoft.DeleteProperty",
+              "property": "$PropertyToChange"
+            }
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Assign @utterance"
+      },
+      "$source": "NewMovie-IMDBlink-assign-utterance",
+      "$Generator": "de499a4a4afc6797bbd3c71763d341e6"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Remove()",
+      "property": "IMDBlink",
+      "value": "url",
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "condition": "$IMDBlink == @url",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "activity": "${IMDBlink_RemoveConfirmation(@url)}"
+            },
+            {
+              "$kind": "Microsoft.DeleteProperty",
+              "property": "$IMDBlink"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "condition": "$PropertyToChange == 'IMDBlink'",
+              "actions": [
+                {
+                  "$kind": "Microsoft.DeleteProperty",
+                  "property": "$PropertyToChange"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Remove @url"
+      },
+      "$source": "NewMovie-IMDBlink-remove-url",
+      "$Generator": "f3bc10266471ee8f77ca314598cdd064"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Remove()",
+      "property": "IMDBlink",
+      "value": "utterance",
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "condition": "$IMDBlink == @utterance",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "activity": "${IMDBlink_RemoveConfirmation(@utterance)}"
+            },
+            {
+              "$kind": "Microsoft.DeleteProperty",
+              "property": "$IMDBlink"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "condition": "$PropertyToChange == 'IMDBlink'",
+              "actions": [
+                {
+                  "$kind": "Microsoft.DeleteProperty",
+                  "property": "$PropertyToChange"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Remove @utterance"
+      },
+      "$source": "NewMovie-IMDBlink-remove-utterance",
+      "$Generator": "bbc0e938b7aa3e04502cc5e5cf7e0ee6"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Clear()",
+      "property": "IMDBlink",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "${IMDBlink_ClearConfirmation()}"
+        },
+        {
+          "$kind": "Microsoft.DeleteProperty",
+          "property": "$IMDBlink"
+        }
+      ],
+      "$designer": {
+        "name": "Clear Property"
+      },
+      "$source": "NewMovie-IMDBlink-clear",
+      "$Generator": "6de3e8ce67807f8d81d192f81bc48496"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Show()",
+      "property": "IMDBlink",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "${IMDBlink_Show()}"
+        }
+      ],
+      "$designer": {
+        "name": "Show Value"
+      },
+      "$source": "NewMovie-IMDBlink-show",
+      "$Generator": "ead685946eaf9ec17bbd6cfcb36d8128"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Help()",
+      "property": "IMDBlink",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "${IMDBlink_Help()}"
+        }
+      ],
+      "$designer": {
+        "name": "Help"
+      },
+      "$source": "NewMovie-IMDBlink-help",
+      "$Generator": "968980c214072ff999a0525a76322b41"
+    },
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "${helpGlobal()}"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "condition": "!turn.activityProcessed",
+          "actions": [
+            {
+              "$kind": "Microsoft.EmitEvent",
+              "eventName": "activityReceived",
+              "eventValue": "=turn.activity",
+              "bubbleEvent": false
+            }
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Begin Dialog"
+      },
+      "$source": "NewMovie-form-BeginDialog",
+      "$Generator": "4b7608ed45d924e39b4df41a6a0b00d9"
+    },
+    {
+      "$kind": "Microsoft.OnEndOfActions",
+      "condition": "empty(where($requiredProperties, property, !dialog[property]))",
+      "priority": 1000,
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "${propertiesAsActivity('NewMovie', publicProperties())}"
+        },
+        {
+          "$kind": "Microsoft.Ask",
+          "activity": "${changePropertyPrompt()}",
+          "expectedProperties": [
+            "PropertyToChange"
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Form Confirmation Prompt"
+      },
+      "$source": "NewMovie-form-PropertyToChange-prompt",
+      "$Generator": "a27152d966014dc8a7659a98adfe05a1"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Assign()",
+      "property": "PropertyToChange",
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "condition": "turn.dialogEvent.value.value.name == 'boolean'",
+          "actions": [
+            {
+              "$kind": "Microsoft.IfCondition",
+              "condition": "@boolean == 'false'",
+              "actions": [
+                {
+                  "$kind": "Microsoft.EndDialog",
+                  "value": "={MovieName: $MovieName, Genre: $Genre, Rating: $Rating, IMDBlink: $IMDBlink}"
+                }
+              ],
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.Ask",
+                  "activity": "${choosePropertyPrompt()}",
+                  "expectedProperties": [
+                    "PropertyToChange"
+                  ]
+                }
+              ]
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SetProperty",
+              "property": "$PropertyToChange",
+              "value": "=turn.dialogEvent.value.value.name"
+            }
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Finish or Property to Change"
+      },
+      "$source": "NewMovie-form-PropertyToChange-assign",
+      "$Generator": "0759499b0b718f3e697da3ea93869c74"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Change()",
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperty",
+          "property": "$PropertyToChange",
+          "value": "=turn.dialogEvent.value.property"
+        }
+      ],
+      "$designer": {
+        "name": "Property to Change Assign"
+      },
+      "$source": "NewMovie-form-Change",
+      "$Generator": "4740ef78f5be2aa90db5d9123dad0555"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Cancel()",
+      "actions": [
+        {
+          "$kind": "Microsoft.Ask",
+          "activity": "${cancelPrompt()}",
+          "expectedProperties": [
+            "CancelConfirmation"
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Cancel Confirmation Prompt"
+      },
+      "$source": "NewMovie-form-CancelConfirmation-prompt",
+      "$Generator": "5b641aea8aadbd2afcfd1777303043e3"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Assign()",
+      "property": "CancelConfirmation",
+      "value": "boolean",
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "condition": "@boolean == 'true'",
+          "actions": [
+            {
+              "$kind": "Microsoft.EndDialog"
+            }
+          ]
+        }
+      ],
+      "$designer": {
+        "name": "Cancel Confirmation Assign"
+      },
+      "$source": "NewMovie-form-CancelConfirmation-assign-boolean",
+      "$Generator": "a562ba4aa916b617efc2f9cc308d0002"
+    },
+    {
+      "$kind": "Microsoft.OnChooseProperty",
+      "actions": [
+        {
+          "$kind": "Microsoft.Ask",
+          "activity": "${chooseProperties()}"
+        }
+      ],
+      "$designer": {
+        "name": "Choose Assignment Prompt"
+      },
+      "$source": "NewMovie-form-ChooseProperty",
+      "$Generator": "06b5d2a111cdb51207137d089e0d0fa8"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Skip()",
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "condition": "count($events.Assignments) > 0",
+          "actions": [
+            {
+              "$kind": "Microsoft.EditArray",
+              "changeType": "take",
+              "itemsProperty": "$events.Assignments"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.IfCondition",
+              "condition": "exists($PropertyToChange)",
+              "actions": [
+                {
+                  "$kind": "Microsoft.DeleteProperty",
+                  "property": "$PropertyToChange"
+                }
+              ],
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.SetProperty",
+                  "property": "$requiredProperties",
+                  "value": "=form.skipExpectedProperties()"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.DeleteProperty",
+          "property": "$retries"
+        }
+      ],
+      "$designer": {
+        "name": "Skip"
+      },
+      "$source": "NewMovie-form-Skip",
+      "$Generator": "132f5c7057ba7372e1c478a676e3fd81"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Show()",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "${propertiesAsActivity('NewMovie', publicProperties())}"
+        }
+      ],
+      "$designer": {
+        "name": "Show Form"
+      },
+      "$source": "NewMovie-form-Show",
+      "$Generator": "17117fd65edcddbe3969a08b0e0e71d1"
+    },
+    {
+      "$kind": "Microsoft.OnAssignEntity",
+      "operation": "Help()",
+      "actions": [
+        {
+          "$kind": "Microsoft.DeleteProperty",
+          "property": "$retries"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "${helpGlobal()}"
+        }
+      ],
+      "$designer": {
+        "name": "Global Help"
+      },
+      "$source": "NewMovie-form-HelpGlobal",
+      "$Generator": "03b9ebd0c973d6f5aa71570506df080a"
+    },
+    {
+      "$kind": "Microsoft.OnEndOfActions",
+      "condition": "exists($retries)",
+      "runOnce": true,
+      "priority": 0,
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "${helpReprompt()}"
+        }
+      ],
+      "$designer": {
+        "name": "Reprompt Help"
+      },
+      "$source": "NewMovie-form-HelpReprompt",
+      "$Generator": "484c1fb7750ee166e41a33c066fa4946"
+    },
+    {
+      "$kind": "Microsoft.OnDialogEvent",
+      "event": "recognizedIntent",
+      "condition": "=turn.recognizedIntent == 'None' || (turn.recognizedIntent == 'NewMovie' && count(turn.recognizedEntities) == 0)",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "${notUnderstood()}"
+        }
+      ],
+      "$designer": {
+        "name": "Not Understood"
+      },
+      "$source": "NewMovie-form-NotUnderstood",
+      "$Generator": "a3b95e8066359682590f403534423bb7"
+    }
+  ],
+  "$designer": {
+    "name": "NewMovie form dialog"
+  },
+  "$Generator": "efcfc975ccd59095e15289dd6a086a02",
+  "defaultResultProperty": "dialog.result",
+  "autoEndDialog": true
+}

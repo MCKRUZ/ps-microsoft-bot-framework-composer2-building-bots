@@ -1,0 +1,148 @@
+
+> If you see **xxxEntityN** in the generated entity definitions  then it means your schema has
+> no 'examples' or '$examples' to use as sample values.
+> Search and replace the **xxEntityN** with suitable examples, or update your schema
+> to have example utterances.
+
+> Define the entity for recognizing the 'MovieName' property. You can add synonyms here.  
+@ ml MovieNameValue
+
+
+> Define phrase list for 'MovieName property.
+@ phraselist MovieNamePhrases(interchangeable) disabledForAllModels =
+        - movie
+        - name
+        - movie name
+
+> Define property entity and optional value for 'MovieName' property.
+@ ml MovieNameProperty usesFeature MovieNamePhrases
+    - @ MovieNameValue MovieNameValue
+
+> Define operations on 'MovieName' property.
+@ ml Assign() usesFeature AssignPhrases
+    -@ ml MovieNameProperty usesFeature MovieNameProperty
+        - @ MovieNameValue MovieNameValue
+
+@ ml Remove() usesFeature RemovePhrases
+    -@ ml MovieNameProperty usesFeature MovieNameProperty
+        - @ MovieNameValue MovieNameValue
+
+@ ml Clear() usesFeature ClearPhrases
+    -@ ml MovieNameProperty usesFeature MovieNameProperty
+        - @ MovieNameValue MovieNameValue
+
+@ ml Change() usesFeature ChangePhrases
+    -@ ml MovieNameProperty usesFeature MovieNameProperty
+        - @ MovieNameValue MovieNameValue
+
+@ ml Show() usesFeature ShowPhrases
+    -@ ml MovieNameProperty usesFeature MovieNameProperty
+        - @ MovieNameValue MovieNameValue
+
+@ ml Help() usesFeature HelpPhrases
+    -@ ml MovieNameProperty usesFeature MovieNameProperty
+        - @ MovieNameValue MovieNameValue
+
+
+> Assign examples for operations on the 'MovieName' property to the intent 'NewMovie'.
+# NewMovie
+>> entity: Standalone MovieNameProperty with MovieNameValue
+- {MovieNameProperty={MovieNameValue=**MovieNameValue1**}}
+- {MovieNameProperty={MovieNameValue=**MovieNameValue2**}}
+- {MovieNameProperty={MovieNameValue=**MovieNameValue3**}}
+- {MovieNameProperty={MovieNameValue=**MovieNameValue1**} movie}
+- {MovieNameProperty={MovieNameValue=**MovieNameValue1**} movie name}
+- {MovieNameProperty={MovieNameValue=**MovieNameValue1**} name}
+- {MovieNameProperty={MovieNameValue=**MovieNameValue2**} movie name}
+- {MovieNameProperty={MovieNameValue=**MovieNameValue2**} name}
+- {MovieNameProperty={MovieNameValue=**MovieNameValue2**} movie}
+- {MovieNameProperty={MovieNameValue=**MovieNameValue3**} movie}
+- {MovieNameProperty={MovieNameValue=**MovieNameValue3**} name}
+- {MovieNameProperty={MovieNameValue=**MovieNameValue3**} movie name}
+
+>> property: Standalone MovieNameProperty name
+- {MovieNameProperty=movie name}
+- {MovieNameProperty=name}
+- {MovieNameProperty=movie}
+
+> Assign() examples for MovieNameProperty and MovieNameValue
+- {Assign()=add {MovieNameProperty={MovieNameValue=**MovieNameValue3**} name}}
+- {Assign()=add {MovieNameProperty={MovieNameValue=**MovieNameValue1**} name}}
+- {Assign()=add {MovieNameProperty={MovieNameValue=**MovieNameValue3**} movie name}}
+- {Assign()=add {MovieNameProperty={MovieNameValue=**MovieNameValue3**} movie}}
+- {Assign()=add {MovieNameProperty={MovieNameValue=**MovieNameValue1**} movie}}
+- {Assign()=with {MovieNameProperty={MovieNameValue=**MovieNameValue1**}}}
+- {Assign()=with {MovieNameProperty={MovieNameValue=**MovieNameValue2**}}}
+- {Assign()=with {MovieNameProperty={MovieNameValue=**MovieNameValue3**}}}
+- {Assign()={MovieNameProperty=movie name is {MovieNameValue=**MovieNameValue3**}}}
+- {Assign()={MovieNameProperty=movie is {MovieNameValue=**MovieNameValue1**}}}
+- {Assign()={MovieNameProperty=movie name is {MovieNameValue=**MovieNameValue1**}}}
+- {Assign()={MovieNameProperty=movie is {MovieNameValue=**MovieNameValue2**}}}
+- {Assign()={MovieNameProperty=movie name is {MovieNameValue=**MovieNameValue2**}}}
+- {Assign()={MovieNameProperty=name of {MovieNameValue=**MovieNameValue2**}}}
+- {Assign()={MovieNameProperty=name of {MovieNameValue=**MovieNameValue3**}}}
+- {Assign()={MovieNameProperty=movie name of {MovieNameValue=**MovieNameValue3**}}}
+- {Assign()={MovieNameProperty=movie of {MovieNameValue=**MovieNameValue2**}}}
+- {Assign()={MovieNameProperty=movie name of {MovieNameValue=**MovieNameValue2**}}}
+- {Assign()={MovieNameProperty=name are {MovieNameValue=**MovieNameValue2**}}}
+- {Assign()={MovieNameProperty=name are {MovieNameValue=**MovieNameValue3**}}}
+- {Assign()={MovieNameProperty=movie are {MovieNameValue=**MovieNameValue1**}}}
+- {Assign()={MovieNameProperty=movie name are {MovieNameValue=**MovieNameValue1**}}}
+- {Assign()={MovieNameProperty=movie name are {MovieNameValue=**MovieNameValue2**}}}
+
+> Remove() examples for MovieNameProperty and MovieNameValue
+- {Remove()=remove {MovieNameProperty={MovieNameValue=**MovieNameValue1**}}
+- {Remove()=remove {MovieNameProperty={MovieNameValue=**MovieNameValue3**}}
+- {Remove()=with no {MovieNameProperty={MovieNameValue=**MovieNameValue1**} movie name}
+- {Remove()=with no {MovieNameProperty={MovieNameValue=**MovieNameValue1**} name}
+- {Remove()=with no {MovieNameProperty={MovieNameValue=**MovieNameValue2**} movie}
+- {Remove()=with no {MovieNameProperty={MovieNameValue=**MovieNameValue1**} movie}
+- {Remove()=with no {MovieNameProperty={MovieNameValue=**MovieNameValue3**} movie}
+
+> Clear() examples for MovieNameProperty
+- {Clear()=clear {MovieNameProperty=movie name}}
+- {Clear()=clear {MovieNameProperty=movie}}
+- {Clear()=clear {MovieNameProperty=name}}
+- {Clear()=reset {MovieNameProperty=movie}}
+- {Clear()=reset {MovieNameProperty=movie name}}
+- {Clear()=reset {MovieNameProperty=name}}
+
+> Show() examples for MovieNameProperty
+- {Show()=show {MovieNameProperty=movie}}
+- {Show()=show {MovieNameProperty=movie name}}
+- {Show()=show {MovieNameProperty=name}}
+- {Show()=value of {MovieNameProperty=movie name}}
+- {Show()=value of {MovieNameProperty=name}}
+- {Show()=value of {MovieNameProperty=movie}}
+- {Show()={MovieNameProperty=name} values}
+- {Show()={MovieNameProperty=movie name} values}
+- {Show()={MovieNameProperty=movie} values}
+- {Show()={MovieNameProperty=movie} selection}
+- {Show()={MovieNameProperty=name} selection}
+- {Show()={MovieNameProperty=movie name} selection}
+
+> Help() examples for MovieNameProperty
+- {Help()=help {MovieNameProperty=name}}
+- {Help()=help {MovieNameProperty=movie}}
+- {Help()=help {MovieNameProperty=movie name}}
+- {Help()=help with {MovieNameProperty=movie name}}
+- {Help()=help with {MovieNameProperty=name}}
+- {Help()=help with {MovieNameProperty=movie}}
+- {Help()=what can I say for {MovieNameProperty=movie}}
+- {Help()=what can I say for {MovieNameProperty=movie name}}
+- {Help()=what can I say for {MovieNameProperty=name}}
+- {Help()={MovieNameProperty=name} help}
+- {Help()={MovieNameProperty=movie} help}
+- {Help()={MovieNameProperty=movie name} help}
+
+> Change() examples for MovieNameProperty
+- {Change()=change {MovieNameProperty=movie name}}
+- {Change()=change {MovieNameProperty=movie}}
+- {Change()=change {MovieNameProperty=name}}
+- {Change()=goto {MovieNameProperty=movie}}
+- {Change()=goto {MovieNameProperty=name}}
+- {Change()=goto {MovieNameProperty=movie name}}
+
+
+
+> Generator: 1b8dce33e592fc25b57f65b52c00315f

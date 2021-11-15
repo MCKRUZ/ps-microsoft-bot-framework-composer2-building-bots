@@ -1,0 +1,126 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "rZFMXB",
+    "name": "NameDialog",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "X1IXPz"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "iRljGQ"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": true,
+          "allowInterruptions": false,
+          "prompt": "${TextInput_Prompt_iRljGQ()}",
+          "unrecognizedPrompt": "${TextInput_UnrecognizedPrompt_iRljGQ()}",
+          "property": "user.name",
+          "outputFormat": "=concat(toUpper(substring(user.name, 0, 1)),substring(user.name,1,length(user.name)-1))",
+          "validations": [
+            "=length(this.value)>1",
+            "=length(this.value)<=10"
+          ],
+          "defaultValueResponse": "${TextInput_DefaultValueResponse_iRljGQ()}",
+          "defaultValue": "Matt",
+          "invalidPrompt": "${TextInput_InvalidPrompt_iRljGQ()}"
+        },
+        {
+          "$kind": "Microsoft.ConfirmInput",
+          "$designer": {
+            "id": "N5DyJ9"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": true,
+          "allowInterruptions": false,
+          "prompt": "${ConfirmInput_Prompt_N5DyJ9()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineSeparator": ",",
+            "inlineOr": "or",
+            "inlineOrMore": "and"
+          },
+          "property": "user.nameConfirmed",
+          "style": "auto",
+          "confirmChoices": [
+            {
+              "value": "True",
+              "synonyms": [
+                "Yes",
+                "yes",
+                "true",
+                "yup",
+                "sure"
+              ]
+            },
+            {
+              "value": "False",
+              "synonyms": [
+                "No",
+                "no",
+                "false",
+                "nope",
+                "nah"
+              ]
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "GOxr9v"
+          },
+          "condition": "=user.nameConfirmed",
+          "elseActions": [
+            {
+              "$kind": "Microsoft.RepeatDialog",
+              "$designer": {
+                "id": "dkRan5"
+              },
+              "activityProcessed": true,
+              "allowLoop": true
+            }
+          ],
+          "actions": [
+            {
+              "$kind": "Microsoft.TraceActivity",
+              "$designer": {
+                "id": "o5EvoX"
+              },
+              "name": "My Trace Event",
+              "label": "My Label",
+              "valueType": "String",
+              "value": "\"This is my value\""
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "dWOOhy"
+          },
+          "activity": "${SendActivity_dWOOhy()}"
+        }
+      ]
+    }
+  ],
+  "generator": "NameDialog.lg",
+  "recognizer": "NameDialog.lu.qna",
+  "id": "NameDialog"
+}

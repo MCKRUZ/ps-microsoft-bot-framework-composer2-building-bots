@@ -1,0 +1,111 @@
+
+> If you see **xxxEntityN** in the generated entity definitions  then it means your schema has
+> no 'examples' or '$examples' to use as sample values.
+> Search and replace the **xxEntityN** with suitable examples, or update your schema
+> to have example utterances.
+
+> Define the entity for recognizing the 'MovieName' property. You can add synonyms here.  
+@ ml utterance
+
+
+> Define phrase list for 'MovieName property.
+@ phraselist MovieNamePhrases(interchangeable) disabledForAllModels =
+        - movie
+        - name
+        - movie name
+
+> Define property entity and optional value for 'MovieName' property.
+@ ml MovieNameProperty usesFeature MovieNamePhrases
+    - @ utterance utterance
+
+> Define operations on 'MovieName' property.
+@ ml Assign() usesFeature AssignPhrases
+    -@ ml MovieNameProperty usesFeature MovieNameProperty
+        - @ utterance utterance
+
+@ ml Remove() usesFeature RemovePhrases
+    -@ ml MovieNameProperty usesFeature MovieNameProperty
+        - @ utterance utterance
+
+@ ml Clear() usesFeature ClearPhrases
+    -@ ml MovieNameProperty usesFeature MovieNameProperty
+        - @ utterance utterance
+
+@ ml Change() usesFeature ChangePhrases
+    -@ ml MovieNameProperty usesFeature MovieNameProperty
+        - @ utterance utterance
+
+@ ml Show() usesFeature ShowPhrases
+    -@ ml MovieNameProperty usesFeature MovieNameProperty
+        - @ utterance utterance
+
+@ ml Help() usesFeature HelpPhrases
+    -@ ml MovieNameProperty usesFeature MovieNameProperty
+        - @ utterance utterance
+
+
+> Assign examples for operations on the 'MovieName' property to the intent 'NewMovie'.
+# NewMovie
+>> entity: Standalone entities that map to multiple properties
+- {utterance=**utterance1**}
+- {utterance=**utterance2**}
+- {utterance=**utterance3**}
+
+>> entity: Standalone MovieNameProperty with utterance
+- {MovieNameProperty={utterance=**utterance1**} movie}
+- {MovieNameProperty={utterance=**utterance1**} movie name}
+- {MovieNameProperty={utterance=**utterance1**} name}
+- {MovieNameProperty={utterance=**utterance2**} movie name}
+- {MovieNameProperty={utterance=**utterance2**} name}
+- {MovieNameProperty={utterance=**utterance2**} movie}
+- {MovieNameProperty={utterance=**utterance3**} movie}
+- {MovieNameProperty={utterance=**utterance3**} name}
+- {MovieNameProperty={utterance=**utterance3**} movie name}
+
+>> property: Standalone MovieNameProperty name
+
+> Assign() examples for MovieNameProperty and utterance
+- {Assign()=add {MovieNameProperty={utterance=**utterance2**} movie}}
+- {Assign()=add {MovieNameProperty={utterance=**utterance3**} movie name}}
+- {Assign()=add {MovieNameProperty={utterance=**utterance2**} movie name}}
+- {Assign()=add {MovieNameProperty={utterance=**utterance2**} name}}
+- {Assign()=add {MovieNameProperty={utterance=**utterance1**} name}}
+- {Assign()=set {utterance=**utterance2**}}
+- {Assign()=set {utterance=**utterance1**}}
+- {Assign()=set {utterance=**utterance3**}}
+- {Assign()={MovieNameProperty=movie is {utterance=**utterance3**}}}
+- {Assign()={MovieNameProperty=name is {utterance=**utterance1**}}}
+- {Assign()={MovieNameProperty=movie name is {utterance=**utterance1**}}}
+- {Assign()={MovieNameProperty=movie is {utterance=**utterance2**}}}
+- {Assign()={MovieNameProperty=name is {utterance=**utterance2**}}}
+- {Assign()={MovieNameProperty=name of {utterance=**utterance3**}}}
+- {Assign()={MovieNameProperty=movie name of {utterance=**utterance3**}}}
+- {Assign()={MovieNameProperty=movie of {utterance=**utterance3**}}}
+- {Assign()={MovieNameProperty=movie of {utterance=**utterance1**}}}
+- {Assign()={MovieNameProperty=movie name are {utterance=**utterance1**}}}
+- {Assign()={MovieNameProperty=movie are {utterance=**utterance2**}}}
+- {Assign()={MovieNameProperty=movie name are {utterance=**utterance2**}}}
+- {Assign()={MovieNameProperty=name are {utterance=**utterance2**}}}
+- {Assign()={MovieNameProperty=name are {utterance=**utterance3**}}}
+
+> Remove() examples for MovieNameProperty and utterance
+- {Remove()=with no {MovieNameProperty={utterance=**utterance2**} movie name}
+- {Remove()=with no {MovieNameProperty={utterance=**utterance2**} movie}
+- {Remove()=with no {MovieNameProperty={utterance=**utterance2**} name}
+- {Remove()=with no {MovieNameProperty={utterance=**utterance3**} movie}
+- {Remove()=with no {MovieNameProperty={utterance=**utterance1**} movie name}
+- {Remove()=without {utterance=**utterance3**}}
+- {Remove()=without {utterance=**utterance1**}}
+- {Remove()=without {utterance=**utterance2**}}
+
+> Clear() examples for MovieNameProperty
+
+> Show() examples for MovieNameProperty
+
+> Help() examples for MovieNameProperty
+
+> Change() examples for MovieNameProperty
+
+
+
+> Generator: 37a2cb4f088a189112606d903eb74761

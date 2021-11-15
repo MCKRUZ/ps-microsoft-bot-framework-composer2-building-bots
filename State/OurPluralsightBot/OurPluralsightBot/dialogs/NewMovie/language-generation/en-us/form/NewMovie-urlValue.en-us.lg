@@ -1,0 +1,6 @@
+
+# urlValue_Value(entity)
+> Display value for 'url' entity
+- ${entity.text}
+
+> Generator: cefc76ab92b295f5db52035f2e147936

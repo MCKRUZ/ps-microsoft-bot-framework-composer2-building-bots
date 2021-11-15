@@ -1,0 +1,12 @@
+
+[Genre-GenreValue](Genre/NewMovie-Genre-GenreValue.en-us.lu)
+[IMDBlink-url](IMDBlink/NewMovie-IMDBlink-url.en-us.lu)
+[MovieName-MovieNameValue](MovieName/NewMovie-MovieName-MovieNameValue.en-us.lu)
+[MovieName-utterance](MovieName/NewMovie-MovieName-utterance.en-us.lu)
+[Rating-number](Rating/NewMovie-Rating-number.en-us.lu)
+[booleanEntity](form/NewMovie-booleanEntity.en-us.lu)
+[form-NoneIntent](form/NewMovie-form-NoneIntent.en-us.lu)
+[form-global](form/NewMovie-form-global.en-us.lu)
+[form-phrases](form/NewMovie-form-phrases.en-us.lu)
+
+> Generator: 8dc7546e091618cb7ad0f2e7d88d1759

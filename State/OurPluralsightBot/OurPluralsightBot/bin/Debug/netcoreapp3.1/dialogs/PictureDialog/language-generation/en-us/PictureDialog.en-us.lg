@@ -1,0 +1,30 @@
+[import](common.lg)
+
+# AttachmentInput_Prompt_f2kUCY()
+[Activity
+    Text = ${AttachmentInput_Prompt_f2kUCY_text()}
+]
+
+# AttachmentInput_Prompt_f2kUCY_text()
+- Can you show me a picture of yourself?
+
+# SendActivity_P5NH5g_attachment_7ppjHG()
+	[HeroCard
+	  title = ${user.name}
+	  subtitle = Index: ${dialog.foreach.index}
+	  text = This is my new friend!
+	  images = ${dialog.foreach.value.contentUrl}
+]
+
+# SendActivity_P5NH5g()
+[Activity
+    Attachments = ${SendActivity_P5NH5g_attachment_7ppjHG()}
+]
+
+# SendActivity_8WZge6()
+[Activity
+    Text = ${SendActivity_8WZge6_text()}
+]
+
+# SendActivity_8WZge6_text()
+- Something went wrong! Message: ${turn.dialogEvent.Value.Message}

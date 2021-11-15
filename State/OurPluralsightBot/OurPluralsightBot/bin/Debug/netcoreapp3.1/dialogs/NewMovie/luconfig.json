@@ -1,0 +1,9 @@
+
+{
+    "botName": "NewMovie",
+    "deleteOldVersion": true,
+    "directVersionPublish": true,
+    "out": "generated",
+    "models": ["language-understanding/en-us/NewMovie.en-us.lu"],
+    "schema": "https://raw.githubusercontent.com/microsoft/BotFramework-Composer/main/Composer/packages/server/schemas/sdk.en-US.schema"
+}

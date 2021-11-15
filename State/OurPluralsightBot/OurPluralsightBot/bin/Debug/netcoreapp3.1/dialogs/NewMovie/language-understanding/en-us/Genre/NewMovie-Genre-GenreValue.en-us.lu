@@ -1,0 +1,143 @@
+
+> List entity for Genre enum values
+@ list GenreValue =
+    - Action:
+
+    - Comedy:
+
+    - Drama:
+
+    - Fantasy:
+
+    - Horror:
+
+    - Mystery:
+
+    - Romance:
+
+    - Thriller:
+        - disaster thriller
+        - crime thriller
+
+
+> Define phrase list for 'Genre property.
+@ phraselist GenrePhrases(interchangeable) disabledForAllModels =
+        - genre
+
+> Define property entity and optional value for 'Genre' property.
+@ ml GenreProperty usesFeature GenrePhrases
+    - @ GenreValue GenreValue
+
+> Define operations on 'Genre' property.
+@ ml Assign() usesFeature AssignPhrases
+    -@ ml GenreProperty usesFeature GenreProperty
+        - @ GenreValue GenreValue
+
+@ ml Remove() usesFeature RemovePhrases
+    -@ ml GenreProperty usesFeature GenreProperty
+        - @ GenreValue GenreValue
+
+@ ml Clear() usesFeature ClearPhrases
+    -@ ml GenreProperty usesFeature GenreProperty
+        - @ GenreValue GenreValue
+
+@ ml Change() usesFeature ChangePhrases
+    -@ ml GenreProperty usesFeature GenreProperty
+        - @ GenreValue GenreValue
+
+@ ml Show() usesFeature ShowPhrases
+    -@ ml GenreProperty usesFeature GenreProperty
+        - @ GenreValue GenreValue
+
+@ ml Help() usesFeature HelpPhrases
+    -@ ml GenreProperty usesFeature GenreProperty
+        - @ GenreValue GenreValue
+
+
+> Assign examples for operations on the 'Genre' property to the intent 'NewMovie'.
+# NewMovie
+>> entity: Standalone GenreProperty with GenreValue
+- {GenreProperty={GenreValue=Action}}
+- {GenreProperty={GenreValue=Comedy}}
+- {GenreProperty={GenreValue=Drama}}
+- {GenreProperty={GenreValue=Fantasy}}
+- {GenreProperty={GenreValue=Horror}}
+- {GenreProperty={GenreValue=Mystery}}
+- {GenreProperty={GenreValue=Romance}}
+- {GenreProperty={GenreValue=Thriller}}
+- {GenreProperty={GenreValue=disaster thriller}}
+- {GenreProperty={GenreValue=crime thriller}}
+- {GenreProperty={GenreValue=Action} genre}
+- {GenreProperty={GenreValue=Comedy} genre}
+- {GenreProperty={GenreValue=Drama} genre}
+- {GenreProperty={GenreValue=Fantasy} genre}
+- {GenreProperty={GenreValue=Horror} genre}
+- {GenreProperty={GenreValue=Mystery} genre}
+- {GenreProperty={GenreValue=Romance} genre}
+- {GenreProperty={GenreValue=Thriller} genre}
+- {GenreProperty={GenreValue=disaster thriller} genre}
+- {GenreProperty={GenreValue=crime thriller} genre}
+
+>> property: Standalone GenreProperty name
+- {GenreProperty=genre}
+
+> Assign() examples for GenreProperty and GenreValue
+- {Assign()=add {GenreProperty={GenreValue=Drama} genre}}
+- {Assign()=add {GenreProperty={GenreValue=Romance} genre}}
+- {Assign()=add {GenreProperty={GenreValue=Comedy} genre}}
+- {Assign()=add {GenreProperty={GenreValue=Fantasy} genre}}
+- {Assign()=with {GenreProperty={GenreValue=Fantasy}}}
+- {Assign()=with {GenreProperty={GenreValue=Comedy}}}
+- {Assign()=with {GenreProperty={GenreValue=Romance}}}
+- {Assign()=with {GenreProperty={GenreValue=crime thriller}}}
+- {Assign()={GenreProperty=genre is {GenreValue=Romance}}}
+- {Assign()={GenreProperty=genre is {GenreValue=disaster thriller}}}
+- {Assign()={GenreProperty=genre is {GenreValue=Comedy}}}
+- {Assign()={GenreProperty=genre is {GenreValue=Fantasy}}}
+- {Assign()={GenreProperty=genre is {GenreValue=Thriller}}}
+- {Assign()={GenreProperty=genre of {GenreValue=Action}}}
+- {Assign()={GenreProperty=genre of {GenreValue=Drama}}}
+- {Assign()={GenreProperty=genre of {GenreValue=Comedy}}}
+- {Assign()={GenreProperty=genre of {GenreValue=Thriller}}}
+- {Assign()={GenreProperty=genre of {GenreValue=crime thriller}}}
+- {Assign()={GenreProperty=genre are {GenreValue=Mystery}}}
+- {Assign()={GenreProperty=genre are {GenreValue=Comedy}}}
+- {Assign()={GenreProperty=genre are {GenreValue=Fantasy}}}
+- {Assign()={GenreProperty=genre are {GenreValue=crime thriller}}}
+- {Assign()={GenreProperty=genre are {GenreValue=Thriller}}}
+
+> Remove() examples for GenreProperty and GenreValue
+- {Remove()=remove {GenreProperty={GenreValue=Thriller}}
+- {Remove()=remove {GenreProperty={GenreValue=crime thriller}}
+- {Remove()=remove {GenreProperty={GenreValue=Horror}}
+- {Remove()=remove {GenreProperty={GenreValue=Comedy}}
+- {Remove()=remove {GenreProperty={GenreValue=Romance}}
+- {Remove()=with no {GenreProperty={GenreValue=Drama} genre}
+- {Remove()=with no {GenreProperty={GenreValue=disaster thriller} genre}
+- {Remove()=with no {GenreProperty={GenreValue=Fantasy} genre}
+- {Remove()=with no {GenreProperty={GenreValue=Thriller} genre}
+- {Remove()=with no {GenreProperty={GenreValue=Romance} genre}
+
+> Clear() examples for GenreProperty
+- {Clear()=clear {GenreProperty=genre}}
+- {Clear()=reset {GenreProperty=genre}}
+
+> Show() examples for GenreProperty
+- {Show()=show {GenreProperty=genre}}
+- {Show()=value of {GenreProperty=genre}}
+- {Show()={GenreProperty=genre} values}
+- {Show()={GenreProperty=genre} selection}
+
+> Help() examples for GenreProperty
+- {Help()=help {GenreProperty=genre}}
+- {Help()=help with {GenreProperty=genre}}
+- {Help()=what can I say for {GenreProperty=genre}}
+- {Help()={GenreProperty=genre} help}
+
+> Change() examples for GenreProperty
+- {Change()=change {GenreProperty=genre}}
+- {Change()=goto {GenreProperty=genre}}
+
+
+
+> Generator: 72a5de0594610591e3ff6ccbd36a98ea
