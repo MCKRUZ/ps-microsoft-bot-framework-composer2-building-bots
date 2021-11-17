@@ -1,0 +1,54 @@
+# Cancel
+- cancel
+- quit
+- abort
+- exit
+- never mind
+- forget about it
+- just stop already
+- end this now
+
+# Help
+- help
+- im stuck
+- how do you work
+- what can you do
+- what can you help me with
+- i need help
+- i need some assistance
+
+# None
+- where is my car?
+- I want to order a pizza
+- place an item on hold
+- Is it going to rain?
+- turn on the lights
+- check my account balance
+- do unicorns really exist
+- duck
+
+# OrderIceCream
+- I want to order some ice cream
+- Can I order ice cream?
+- Ice cream
+- Do you have ice cream?
+- Can I get some ice cream?
+- Is there ice cream?
+
+> Add Entity Utterances
+- Can I get some {Flavors} ice cream?
+- Is there {Flavors} ice cream?
+- I want to order some {Flavors} ice cream
+- Is there {Flavors} ice cream?
+
+>> Add Entities
+@ list Flavors =
+	- Chocolate :
+		- Cocoa
+		- Mocca
+	- Vanilla :
+		- Ordinary
+		- Plain
+	- Strawberry :
+		- Berry
+		- Red

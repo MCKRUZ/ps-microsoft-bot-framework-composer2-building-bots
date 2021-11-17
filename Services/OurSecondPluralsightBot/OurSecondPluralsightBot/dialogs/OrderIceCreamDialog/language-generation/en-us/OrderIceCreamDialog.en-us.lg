@@ -1,0 +1,30 @@
+[import](common.lg)
+
+# ChoiceInput_Prompt_XWvMwP()
+[Activity
+    Text = ${ChoiceInput_Prompt_XWvMwP_text()}
+]
+
+# ChoiceInput_Prompt_XWvMwP_text()
+- What kind of ice cream would you like?
+# SendActivity_DLWxnq()
+[Activity
+    Text = ${SendActivity_DLWxnq_text()}
+]
+
+# SendActivity_DLWxnq_text()
+- You chose ${dialog.result.iceCreamChoice}.
+# TextInput_Prompt_CfNtXq()
+[Activity
+    Text = ${TextInput_Prompt_CfNtXq_text()}
+]
+
+# TextInput_Prompt_CfNtXq_text()
+- What kind of toppings do you want?
+# SendActivity_aad42G()
+[Activity
+    Text = ${SendActivity_aad42G_text()}
+]
+
+# SendActivity_aad42G_text()
+- You chose ${dialog.result.iceCreamToppings}.

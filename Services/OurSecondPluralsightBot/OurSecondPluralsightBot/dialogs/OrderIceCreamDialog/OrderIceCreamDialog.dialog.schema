@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.botframework.com/schemas/component/v1.0/component.schema",
+  "$role": "implements(Microsoft.IDialog)",
+  "title": "OrderIceCreamDialog",
+  "type": "object",
+  "properties": {
+    "result.iceCreamChoice": {
+      "description": "The flavor of ice cream",
+      "$ref": "https://schemas.botframework.com/schemas/component/v1.0/component.schema#/definitions/arrayExpression",
+      "title": "Result Ice Cream Choice"
+    }
+  },
+  "$result": {
+    "type": "object",
+    "properties": {}
+  }
+}

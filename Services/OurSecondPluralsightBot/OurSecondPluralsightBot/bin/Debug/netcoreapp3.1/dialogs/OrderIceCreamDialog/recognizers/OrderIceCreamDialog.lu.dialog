@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.MultiLanguageRecognizer",
+  "id": "LUIS_OrderIceCreamDialog",
+  "recognizers": {
+    "en-us": "OrderIceCreamDialog.en-us.lu",
+    "": "OrderIceCreamDialog.en-us.lu"
+  }
+}

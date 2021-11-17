@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.MultiLanguageRecognizer",
+  "id": "LUIS_OurSecondPluralsightBot",
+  "recognizers": {
+    "en-us": "OurSecondPluralsightBot.en-us.lu",
+    "": "OurSecondPluralsightBot.en-us.lu"
+  }
+}
