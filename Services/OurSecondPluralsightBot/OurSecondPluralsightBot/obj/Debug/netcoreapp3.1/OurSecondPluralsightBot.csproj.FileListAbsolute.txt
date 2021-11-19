@@ -160,3 +160,8 @@ C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Services\OurSecondPlu
 C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Services\OurSecondPluralsightBot\OurSecondPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\OrderIceCreamDialog.en-us.qna
 C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Services\OurSecondPluralsightBot\OurSecondPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\OurSecondPluralsightBot.en-us.qna
 C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Services\OurSecondPluralsightBot\OurSecondPluralsightBot\bin\Debug\netcoreapp3.1\generated\interruption\WelcomeDialog.en-us.qna
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Services\OurSecondPluralsightBot\OurSecondPluralsightBot\bin\Debug\netcoreapp3.1\generated\qnamaker.settings.composer.westus.json
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Services\OurSecondPluralsightBot\OurSecondPluralsightBot\bin\Debug\netcoreapp3.1\recognizers\OurSecondPluralsightBot.en-us.qna.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Services\OurSecondPluralsightBot\OurSecondPluralsightBot\bin\Debug\netcoreapp3.1\recognizers\OurSecondPluralsightBot.qna.dialog
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Services\OurSecondPluralsightBot\OurSecondPluralsightBot\bin\Debug\netcoreapp3.1\knowledge-base\source\PluralsightFAQ.source.en-us.qna
+C:\temp\ps-microsoft-bot-framework-composer2-building-bots\Services\OurSecondPluralsightBot\OurSecondPluralsightBot\bin\Debug\netcoreapp3.1\knowledge-base\source\SurfacePenFAQ.source.en-us.qna

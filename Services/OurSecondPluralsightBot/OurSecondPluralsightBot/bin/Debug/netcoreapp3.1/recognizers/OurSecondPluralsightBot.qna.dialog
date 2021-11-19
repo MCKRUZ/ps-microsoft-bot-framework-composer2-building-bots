@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.MultiLanguageRecognizer",
+  "id": "QnA_OurSecondPluralsightBot",
+  "recognizers": {
+    "en-us": "OurSecondPluralsightBot.en-us.qna",
+    "": "OurSecondPluralsightBot.en-us.qna"
+  }
+}
